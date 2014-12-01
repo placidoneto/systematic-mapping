@@ -5,6 +5,7 @@
 \usepackage{xspace}
 \usepackage{amssymb} 
 \usepackage{epstopdf}
+\usepackage{graphicx,color}
 
  
 \usepackage{datatool}
@@ -212,11 +213,64 @@
 %-[END]-----------------------------------------------------------------------
 
 %-[BEGIN]-----------------------------------------------------------------------
-\section{Systematic mapping process}
+\section{Systematic Mapping process}
+We applied the systematic mapping methodology presented in~\cite{SM:Petersen:2008} to our study on SLA-guided data integration on a multi-cloud environments. 
+The proposed methodology consists in five steps (in which step has a result and the final one is the mapping):
+\begin{description}
+\item \textbf{Definition of research question} to define the \textit{research scope};
+\item \textbf{Conduct search} in order to retrieve \textit{all candidate papers}. Those papers are selected applying a query which express the research interest to scientific databases;
+\item  \textbf{Screening of papers} to select the \textit{relevant papers} to answer the research question based on a inclusion and exclusion criteria;
+\item \textbf{Keywording using abstracts} to identify terms that helps on developing the \textit{classification scheme} (mapping categories to classify the papers); and
+\item \textbf{Data extraction and mapping process} to sort the relevant papers into the mapping categories and produce the systematic mapping.
+\end{description}
+\bigskip The following subsections describes our first to fourth step in the mapping. The systematic mapping results are presented in the next section.
 
-\subsection{Research questions}
+\subsection{Definition of research questions (RQs)}
+The aim of this work is to identify in the literature how has \textit{SLA-guided data integration on a multi-cloud environments} been explored, discover possible gaps and the main results produced.
+In order to achieve this goal we formulated three research questions:
+\begin{description}
+\item \textbf{Which are the SLA measures that have been applied most in the cloud?}
+\item \textbf{How has the publication of papers on data integration involved towards cloud topics?}
+\item \textbf{How and in which context have data integration guided by QoS models or requirements been explored in the literature?}
+\end{description}
 
 \subsection{Search and screening of papers}
+\textcolor{red}{search string...}
+
+\textcolor{red}{inclusion and exclusion criteria...}
+
+Inclusion: The title and the abstract mention (i) approach using SLA which includes (or doesn't) data integration; (ii) any study regarding SLA in the context of cloud computing (I saw that there are some works on voip services. I believe this is out of our scope) or some improvement to SLA; (iii) data integration in the context of cloud computing; and (iv) QoS efforts regarding data integration;
+
+A new version of our exclusion criteria:
+
+Papers, books and others that the subject do not focus on the following topics must be excluded:
+(i) an approach combining SLA, data integration and cloud and multi-cloud;
+(ii) an approach using SLA contracts in the context of cloud and multi-cloud;
+(iii) an approach applying some improvement to SLA;
+(iv) a data integration approach in the context of cloud and multi-cloud; and
+(v) a QoS approach regarding data integration.
+
+\textcolor{red}{number  of results...}
+
+\subsection{Keywording of abstracts}
+
+\textcolor{red}{facets...}
+
+\begin{description}
+\item \textbf{Architecture:} multi-databases, federated databases, data warehouse, peer-to-peer.
+\item \textbf{Data Integration description:} schema integration, knowledge, metadata.
+\item \textbf{Data Integration deployment:} centralized, grid, cloud, multi-cloud, peer-to-peer.
+\item \textbf{Data Integration environment:} cloud, federated database, data warehouse
+\item \textbf{Query rewriting:} storage, techniques 
+\item \textbf{Data Quality:} none, provenance, privacy, SLA
+\item \textbf{SLA:} none, languages, clauses, model, security, resources
+\item \textbf{Topic: } SLA and Cloud, SLA and DI, etc. Related to our query...
+\item \textbf{Contribution:} Metric, tool, model, method, process, etc
+\item \textbf{Research:} Evaluation research, Validation research, Solution proposal, etc
+\end{description}
+
+\textcolor{red}{table with results...}
+
 %-[END]-----------------------------------------------------------------------
 
 %-[BEGIN]-----------------------------------------------------------------------
