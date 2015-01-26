@@ -26,22 +26,99 @@ In order to achieve this goal we formulated three research questions:
 \end{description}
 
 \subsection{Search and screening of papers} \label{subsec:search}
-\textcolor{red}{search string...}
 
-\textcolor{red}{inclusion and exclusion criteria...}
+Based on the research questions and our research interests, a set of keywords were defined in order to 
+retrieve relevant papers.
+As mentioned before, we are interested in merging three different topics: SLA, Data Integration and Multi-cloud.
+According to these keywords and correlated words the search query formulated was:
 
-Inclusion: The title and the abstract mention (i) approach using SLA which includes (or doesn't) data integration; (ii) any study regarding SLA in the context of cloud computing (I saw that there are some works on voip services. I believe this is out of our scope) or some improvement to SLA; (iii) data integration in the context of cloud computing; and (iv) QoS efforts regarding data integration;
+\begin{verbatim}
+(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
+   ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
+      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR 
+         "Hybrid cloud")) OR
+(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
+   ("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
+      "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
+         "Distributed databases")) OR
+(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
+   "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
+      "Distributed databases") AND 
+   ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
+      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR 
+        "Hybrid cloud")) OR
+(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
+   "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
+      "Distributed databases") AND 
+   ("QoS" and "Quality of Service"))
+\end{verbatim}
 
-A new version of our exclusion criteria:
+We searched and filtered relevant works in four steps.
+In the first step we searched in four scientific databases: IEEE~\footnote{http://ieeexplore.ieee.org/},
+ACM~\footnote{http://dl.acm.org/}, Science Direct~\footnote{http://www.sciencedirect.com/} and
+CiteSeerX~\footnote{http://citeseerx.ist.psu.edu/}.
+We retrieved 1832 publications (See table~\ref{table:pub}).
 
-Papers, books and others that the subject do not focus on the following topics must be excluded:
-(i) an approach combining SLA, data integration and cloud and multi-cloud;
-(ii) an approach using SLA contracts in the context of cloud and multi-cloud;
-(iii) an approach applying some improvement to SLA;
-(iv) a data integration approach in the context of cloud and multi-cloud; and
-(v) a QoS approach regarding data integration.
+\begin{table}[!htb]
+\begin{center}
+\begin{tabular}{>{\centering\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}p{2.5cm}}
+\toprule
+\textbf{Database} & \textbf{Amount} & \textbf{Included} & \textbf{Excluded} \\ 
+\hline \toprule
+\textbf{IEEE} & 658 & 56 & 602 \\ 
+\hline 
+\textbf{AMC} & 649 & 31 & 618	 \\ 
+\hline 
+\textbf{Science Direct} & 106 & 6 & 100 \\ 
+\hline 
+\textbf{CiteSeerX} & 419 & 21 & 398 \\ 
+\hline 
+\textit{Total} & 1832 & \textbf{114} & 1718 \\ 
+\bottomrule \hline
+\end{tabular} 
+\end{center}
+\caption{Sources and number of papers}\label{table:pub}
+\end{table}
 
-\textcolor{red}{number  of results...}
+In the second step, we added all papers into \textit{Mendeley}~\footnote{http://www.mendeley.com/} 
+reference manager.
+Using Mendeley's plugin an bibtex file containing all papers was exported. 
+This file was used to create a spreadsheet summarizing all papers retrieved, including their abstracts,
+source, year and authors. 
+
+We performed another filtering procedure by analyzing the title and the abstract of the papers in the
+third step. 
+Based on our inclusion and exclusion criteria described in the table~\ref{table:criteria}, we looked for 
+papers that are relevant to our study. 
+In this process 1718 publications were excluded. 
+The columns \textbf{Included} and \textbf{Excluded} in table~\ref{table:criteria} summarize the number of papers that were considered to each source on our mapping.
+
+\begin{table}[!htb]
+\begin{center}
+\begin{tabular}{p{10cm}}
+\bottomrule \hline
+\textbf{Inclusion criteria} \\ 
+\hline 
+- The text must be in English \\ 
+- SLA approaches including data integration and/or multi-cloud environments\\
+- Studies regarding SLA and cloud, describing models, languages and security issues \\
+- Works describing improvements to SLA \\
+- Data integration studies including cloud and/or multi-cloud  \\
+- Quality of Service efforts regarding data integration \\
+\bottomrule \hline 
+\textbf{Exclusion criteria} \\ 
+\hline 
+- Publication with only power point version available \\ 
+- SLA approaches regarding resource allocation \\
+- Publications outside of the software engineering area \\
+- Any paper out of the inclusion criteria  \\
+\bottomrule \hline
+\end{tabular} 
+\end{center}
+\caption{Inclusion and exclusion criteria}\label{table:criteria}
+\end{table}
+
+Finally, in the fourth step, we built the final data collection composed by 114 publications.
 
 \subsection{Keywording of abstracts}
 
