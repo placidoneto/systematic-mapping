@@ -1,8 +1,5 @@
-\section{Systematic Mapping process}
-
 We applied the systematic mapping methodology presented in~\cite{SM:Petersen:2008} to our study on SLA-guided data integration on a multi-cloud environments. 
 The proposed methodology consists in five steps (in which step has a result and the final one is the mapping):
-
 \begin{description}
 \item \textbf{Definition of research question} to define the \textit{research scope};
 \item \textbf{Conduct search} in order to retrieve \textit{all candidate papers}. Those papers are selected applying a query which express the research interest to scientific databases;
@@ -10,14 +7,10 @@ The proposed methodology consists in five steps (in which step has a result and 
 \item \textbf{Keywording using abstracts} to identify terms that helps on developing the \textit{classification scheme} (mapping categories to classify the papers); and
 \item \textbf{Data extraction and mapping process} to sort the relevant papers into the mapping categories and produce the systematic mapping.
 \end{description}
+\bigskip The following subsections describes our first to fourth step in the mapping. The systematic mapping results are presented in the next section.
 
-\bigskip The following subsections describes our first to fourth step in the
-mapping. The systematic mapping results are presented in the next section.   
- 
 \subsection{Definition of research questions (RQs)}
-The aim of this work is to identify in the literature how has \textit{SLA-guided
-data integration on a multi-cloud environments} been explored, discover possible
-gaps and the main results produced.    
+The aim of this work is to identify in the literature how has \textit{SLA-guided data integration on a multi-cloud environments} been explored, discover possible gaps and the main results produced.
 In order to achieve this goal we formulated three research questions:
 \begin{description}
 \item \textbf{Which are the SLA measures that have been applied most in the cloud?}
@@ -25,7 +18,7 @@ In order to achieve this goal we formulated three research questions:
 \item \textbf{How and in which context have data integration guided by QoS models or requirements been explored in the literature?}
 \end{description}
 
-\subsection{Search and screening of papers} \label{subsec:search}
+\subsection{Search and screening of papers}
 \textcolor{red}{search string...}
 
 \textcolor{red}{inclusion and exclusion criteria...}
@@ -45,24 +38,19 @@ Papers, books and others that the subject do not focus on the following topics m
 
 \subsection{Keywording of abstracts}
 
-Taking into the criteria discussed previously (subsection~\ref{subsec:search}), 114 publications 
-were selected to our study. 
-These papers were classified into five facets. For each paper, the abstract was analyzed in order to
-identify the contribution for each facet.
-As result to this process, each paper is classified into the dimensions of each facet. 
-The results are summarized in tables \ref{table:dienviron} to \ref{table:contribution}. 
-The five facets are described bellow.
+\textcolor{red}{small introduction...facets...}
 
-\textbf{Data Integration Environment facet} (See table~\ref{table:dienviron}). 
-Represents the environment (architecture and deployment) in which data integration is being applied.
-The dimensions to this facet are: Cloud, Data Warehouse, Federated Database and Multi-cloud.
+\begin{description}
+\item \textbf{Data Integration Environment facet} represents the environment (architecture and deployment) in which data integration is being applied. The dimensions to this facet are: \textit{Cloud}, \textit{Data Warehouse}, \textit{Federated Database} and \textit{Multi-cloud}.
 \begin{table}[h]
+\caption{Caption here...}
 \begin{center}
-\begin{tabular}{p{4cm}p{10cm}}
+\begin{tabular}{|c|c|}
 \hline 
 \textbf{Dimension} & \textbf{Publication} \\ 
 \hline 
-Cloud & \cite{068,070,072,073,074,075,076,077,078,079,081,082,083,085,087,088,089,090,094,095,096,097,098,099,100,102,103,105,106,107,108,109,110,113}\\ 
+Cloud & \cite{068,070,072,073,074,075,076,077,078,079,081,082,083,085} \\ 
+      & \cite{087,088,089,090,094,095,096,097,098,099,100,102,103,105,106,107,108,109,110,113}\\ 
 \hline 
 Data Warehouse & \cite{066,091,114} \\ 
 \hline 
@@ -72,15 +60,12 @@ Multi-cloud & \cite{012,071,093} \\
 \hline 
 \end{tabular}
 \end{center}
-\caption{Data Integration Environment facet}\label{table:dienviron}
 \end{table}
-
-\textbf{Data Integration Description facet} (See table~\ref{table:didesc}).
-Indicates the strategy used by authors in order to achieve data integration. 
-The dimensions to this facet are: Knowledge, Metadata and Schema.
+\item \textbf{Data Integration Description facet} indicates the strategy used by authors in order to achieve data integration. The dimensions to this facet are: \textit{Knowledge}, \textit{Metadata} and \textit{Schema}.
 \begin{table}[h]
+\caption{Caption here...}
 \begin{center}
-\begin{tabular}{p{4cm}p{10cm}}
+\begin{tabular}{|c|c|}
 \hline 
 \textbf{Dimension} & \textbf{Publication} \\ 
 \hline 
@@ -88,20 +73,16 @@ Knowledge & \cite{012,083} \\
 \hline 
 Metadata & \cite{066,108,113} \\ 
 \hline 
-Schema & \cite{070,071,072,073,075,083,089,091,102,112,114} \\ 
+Schema & \citep{070,071,072,073,075,083,089,091,102,112,114} \\ 
 \hline 
 \end{tabular}
 \end{center}
-\caption{Data Integration Description facet}\label{table:didesc}
 \end{table}
-
-\textbf{Data Quality facet} (See table~\ref{table:dq}). 
-Refers to data quality parameters applied in the publication. 
-The dimensions are: Confidentiality, Privacy, Security, SLA, Data Protection, Data Provenance and Others.
-Note that a publication is classified in the SLA dimension when it does not focus on a specific quality parameter, but in general uses a SLA contract in order to specify one or more.
+\item \textbf{Data Quality facet} shows the data quality parameters applied in the publication. The dimensions are: \textit{Confidentiality}, \textit{Privacy}, \textit{Security}, \textit{SLA} (a publication is classified in this dimension when it does not focus on a specific quality parameter, but in general uses a SLA contract in order to specify one or more), \textit{Data Protection}, \textit{Data Provenance} and \textit{Others}.
 \begin{table}[h]
+\caption{Caption here...}
 \begin{center}
-\begin{tabular}{p{4cm}p{10cm}}
+\begin{tabular}{|c|c|}
 \hline 
 \textbf{Dimension} & \textbf{Publication} \\ 
 \hline 
@@ -111,7 +92,9 @@ Privacy & \cite{007,024,047,067,068,095,096,109,111,113} \\
 \hline 
 Security & \cite{065,081,093,109,112,113} \\ 
 \hline 
-SLA  &\cite{001,002,007,008,009,011,012,013,014,015,016,017,018,019,020,021,022,023,024,025,026,027,028,029,030,031,032,033,034,035,036,037,038,039,040,041,042,043,044,045,046,047,048,049,050,051,052,053,054,055,056,057,058,059,060,061,062,063,064,065}\\
+SLA  & \cite{001,002,007,008,009,011,012,013,014,015,016,017,018,019,020,021,022,023,024,025,026} \\ 
+     & \cite{027,028,029,030,031,032,033,034,035,036,037,038,039,040,041,042,043,044,045,046,047} \\
+     & \cite{048,049,050,051,052,053,054,055,056,057,058,059,060,061,062,063,064,065} \\
 \hline 
 Data Protection & \cite{047,104,106} \\ 
 \hline 
@@ -121,21 +104,20 @@ Others & \cite{071,093,100} \\
 \hline 
 \end{tabular}
 \end{center}
-\caption{Data Quality facet}\label{table:dq}
 \end{table}
-
-\textbf{SLA Usage facet} (See table~\ref{table:sla}).
-This facet is devote to present how the SLA is mainly used in the publication. 
-The dimension for this facet are: Language, Model, Resources and Security.
+\item \textbf{SLA facet} is devote to present the main focus of how the SLA is used in the publication.  \textit{Language}, \textit{Model}, \textit{Resources} and \textit{Security}.
 \begin{table}[h]
+\caption{Caption here...}
 \begin{center}
-\begin{tabular}{p{4cm}p{10cm}}
+\begin{tabular}{|c|c|}
 \hline 
 \textbf{Dimension} & \textbf{Publication} \\ 
 \hline 
 Language & \cite{003,037,039,041,055,056,061} \\ 
 \hline 
-Model & \cite{001,002,003,005,006,007,008,009,010,012,013,014,015,016,017,018,019,020,021,022,023,024,026,027,028,029,030,031,032,033,035,036,038,040,042,043,044,045,046,047,048,049,050,051,053,054,055,057,058,059,060,061,063}\\ 
+Model & \cite{001,002,003,005,006,007,008,009,010,012,013,014,015,016,017,018,019,020,021,022,023,024} \\ 
+      & \cite{026,027,028,029,030,031,032,033,035,036,038,040,042,043,044,045,046,047,048,049,050,051} \\ 
+      & \cite{053,054,055,057,058,059,060,061,063} \\ 
 \hline 
 Resources & \cite{053,064,110} \\ 
 \hline 
@@ -143,15 +125,13 @@ Security & \cite{011,025,034,035,038,049,050,052,062,065,081,093,109,112,113} \\
 \hline 
 \end{tabular}
 \end{center}
-\caption{SLA Usage facet}\label{table:sla}
 \end{table}
-
-\textbf{Contribution facet} (See table~\ref{table:contribution}).
-Express the kind of contribution proposed by the author. 
-The dimensions are Tool, Literature Analysis, Method, Model, Process and Extended Study.
+\item \textbf{Contribution facet} express the main publication contribution. 
+The dimensions are \textit{Tool}, \textit{Literature Analysis}, \textit{Method}, \textit{Model}, \textit{Process} and \textit{Extended Study}.
 \begin{table}[h]
+\caption{Caption here...}
 \begin{center}
-\begin{tabular}{p{4cm}p{10cm}}
+\begin{tabular}{|c|c|}
 \hline 
 \textbf{Dimension} & \textbf{Publication} \\ 
 \hline 
@@ -174,29 +154,29 @@ Extended Study & \cite{047,097,104} \\
 \hline 
 \end{tabular}
 \end{center}
-\caption{Contribution facet}\label{table:contribution}
 \end{table}
-%\item \textbf{Research facet} is dedicated to classify in which kind of research the publication can be fitted in. The dimensions to this facet are: (i) \textit{Evaluation research} ; (ii) Validation research; (iii) Solution proposal; and (iv) Opinion.
-%\begin{table}[h]
-%\caption{Caption here...}
-%\begin{center}
-%\begin{tabular}{|c|c|}
-%\hline 
-%\textbf{Dimension} & \textbf{Publication} \\ 
-%\hline 
-%Evaluation research & \cite{008,026,048,069,073,074,089,094,099,102,103,105,111} \\ 
-%\hline 
-%Validation research & \cite{001,002,005,006,007,009,011,012,014,015,016,017,018,019,020,021,022,023,024} \\
-%         & \cite{025,027,028,029,030,031,032,033,034,036,037,039,045,051,057,059}\\ 
-%         & \cite{079,095,098,100,105,112} \\
-%\hline 
-%Solution proposal & \cite{008,035,038,040,041,042,043,044,046,047,048,049,050,051,053,054,055,056} \\ 
-%                  & \cite{058,060,061,062,063,064,065,066,067,068,070,071,072,075,076,077,078} \\
-%                  & \cite{079,080,081,082,083,084,085,086,087,088,090,091,092,093,094,095,096,097} \\ 
-%                  & \cite{098,100,101,102,104,106,107,110,113,114} \\
-%\hline 
-%Opinion paper & \cite{003,004,010,013,052,069,073,108,109} \\ 
-%\hline  
-%\end{tabular}
-%\end{center}
-%\end{table}
+\item \textbf{Research facet} is dedicated to classify in which kind of research the publication can be fitted in. The dimensions to this facet are: (i) \textit{Evaluation research} ; (ii) Validation research; (iii) Solution proposal; and (iv) Opinion.
+\begin{table}[h]
+\caption{Caption here...}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{Dimension} & \textbf{Publication} \\ 
+\hline 
+Evaluation research & \cite{008,026,048,069,073,074,089,094,099,102,103,105,111} \\ 
+\hline 
+Validation research & \cite{001,002,005,006,007,009,011,012,014,015,016,017,018,019,020,021,022,023,024} \\
+         & \cite{025,027,028,029,030,031,032,033,034,036,037,039,045,051,057,059}\\ 
+         & \cite{079,095,098,100,105,112} \\
+\hline 
+Solution proposal & \cite{008,035,038,040,041,042,043,044,046,047,048,049,050,051,053,054,055,056} \\ 
+                  & \cite{058,060,061,062,063,064,065,066,067,068,070,071,072,075,076,077,078} \\
+                  & \cite{079,080,081,082,083,084,085,086,087,088,090,091,092,093,094,095,096,097} \\ 
+                  & \cite{098,100,101,102,104,106,107,110,113,114} \\
+\hline 
+Opinion paper & \cite{003,004,010,013,052,069,073,108,109} \\ 
+\hline  
+\end{tabular}
+\end{center}
+\end{table}
+\end{description}
