@@ -33,27 +33,51 @@ Based on the research questions and our research interests, a set of keywords we
 retrieve relevant papers.
 As mentioned before, we are interested in merging three different topics: SLA, Data Integration and Multi-cloud.
 According to these keywords and correlated words the search query formulated was:
-
-\begin{verbatim}
-(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
+\medskip  \\
+%\begin{small}
+%\begin{verbatim}
+%(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
+%   ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
+%      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR 
+%         "Hybrid cloud")) OR
+%(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
+%   ("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
+%      "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
+%         "Distributed databases")) OR
+%(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
+%   "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
+%      "Distributed databases") AND 
+%   ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
+%      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR 
+%        "Hybrid cloud")) OR
+%(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
+%   "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
+%      "Distributed databases") AND 
+%   ("QoS" and "Quality of Service"))
+%\end{verbatim}
+%\end{small}
+\daniel{New format of the query. We saved some space.}
+\begin{small}
+\textit{(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
    ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
       "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR 
-         "Hybrid cloud")) OR
-(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
+\medskip        "Hybrid cloud"))} \textbf{OR} \\ 
+\textit{(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
    ("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
-      "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
-         "Distributed databases")) OR
-(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
+      "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR }
+\medskip        \textit{ "Distributed databases"))} \textbf{OR} \\
+\textit{(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
    "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
       "Distributed databases") AND 
    ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
-      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR 
-        "Hybrid cloud")) OR
-(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
+      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR }
+\medskip       \textit{ "Hybrid cloud"))} \textbf{OR} \\
+\textit{(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
    "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
       "Distributed databases") AND 
-   ("QoS" and "Quality of Service"))
-\end{verbatim}
+   ("QoS" and "Quality of Service"))}
+\end{small}
+\medskip
 
 We searched and filtered relevant works in four steps.
 In the first step we searched in four scientific databases: IEEE~\footnote{http://ieeexplore.ieee.org/},
@@ -124,7 +148,7 @@ Finally, in the fourth step, we built the final data collection composed by 114 
 
 \subsection{Keywording of abstracts}
 
-\daniel{Why did we choose our facets and dimensions. $\Longrightarrow$}
+\idaniel{Why did we choose our facets and dimensions.}
 Considering the criterias discussed previously (subsection~\ref{subsec:search}),
 114 works were selected to our study. 
 According to our research interests, these papers were classified into the five facets. 

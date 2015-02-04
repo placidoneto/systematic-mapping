@@ -20,9 +20,9 @@
 \usepackage{amssymb}
 %% The amsthm package provides extended theorem environments
 %% \usepackage{amsthm}
-
-\newcommand{\daniel}[1]{\marginpar{\textcolor{red}{\textbf{Daniel: }#1}}}
-\newcommand{\idaniel}[1]{\textcolor{blue}{\textbf{Daniel: }#1}}
+\usepackage{marginnote}
+\newcommand{\daniel}[1]{\marginnote{\textcolor{red}{\textbf{Daniel: }#1}}}
+\newcommand{\idaniel}[1]{\marginpar{\textcolor{red}{\textbf{Daniel: }#1}}}
 
 \begin{document}
 
