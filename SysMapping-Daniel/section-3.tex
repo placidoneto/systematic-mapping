@@ -33,27 +33,51 @@ Based on the research questions and our research interests, a set of keywords we
 retrieve relevant papers.
 As mentioned before, we are interested in merging three different topics: SLA, Data Integration and Multi-cloud.
 According to these keywords and correlated words the search query formulated was:
-
-\begin{verbatim}
-(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
+\medskip  \\
+%\begin{small}
+%\begin{verbatim}
+%(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
+%   ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
+%      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR 
+%         "Hybrid cloud")) OR
+%(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
+%   ("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
+%      "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
+%         "Distributed databases")) OR
+%(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
+%   "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
+%      "Distributed databases") AND 
+%   ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
+%      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR 
+%        "Hybrid cloud")) OR
+%(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
+%   "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
+%      "Distributed databases") AND 
+%   ("QoS" and "Quality of Service"))
+%\end{verbatim}
+%\end{small}
+\daniel{New format of the query. We saved some space.}
+\begin{small}
+\textit{(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
    ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
       "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR 
-         "Hybrid cloud")) OR
-(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
+\medskip        "Hybrid cloud"))} \textbf{OR} \\ 
+\textit{(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
    ("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
-      "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
-         "Distributed databases")) OR
-(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
+      "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR }
+\medskip        \textit{ "Distributed databases"))} \textbf{OR} \\
+\textit{(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
    "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
       "Distributed databases") AND 
    ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
-      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR 
-        "Hybrid cloud")) OR
-(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
+      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR }
+\medskip       \textit{ "Hybrid cloud"))} \textbf{OR} \\
+\textit{(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
    "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
       "Distributed databases") AND 
-   ("QoS" and "Quality of Service"))
-\end{verbatim}
+   ("QoS" and "Quality of Service"))}
+\end{small}
+\medskip
 
 We searched and filtered relevant works in four steps.
 In the first step we searched in four scientific databases: IEEE~\footnote{http://ieeexplore.ieee.org/},
@@ -88,10 +112,13 @@ We retrieved 1832 publications (See table~\ref{table:pub}).
 %This file was used to create a spreadsheet summarizing all papers retrieved, including their abstracts,
 %source, year and authors. 
 
+\daniel{Why did we choose this criteria.}
 We performed the filtering procedure by analyzing the title and the abstract of the papers in the
 third step. 
 Based on our inclusion and exclusion criteria described in the table~\ref{table:criteria}, we looked for 
 papers that are relevant to our study. 
+This criteria was defined taking into account our research interests. 
+We are looking for works regarding data integration on a multi-cloud environment using SLA.
 In this process 1718 publications were excluded. 
 The columns \textbf{Included} and \textbf{Excluded} in table~\ref{table:criteria} summarize the number of papers that were considered to each source on our mapping.
 
@@ -124,18 +151,168 @@ Finally, in the fourth step, we built the final data collection composed by 114 
 
 \subsection{Keywording of abstracts}
 
+\idaniel{Why did we choose our facets and dimensions.}
 Considering the criterias discussed previously (subsection~\ref{subsec:search}),
 114 works were selected to our study. 
-These papers were classified into the five facets. For each paper, the abstract
+According to our research interests, these papers were classified into the five facets. 
+The facets' dimensions were defined based on our knowledge and on the keywording process proposed by the
+methodology.   
+For each paper, the abstract
 was analyzed in order to identify the contribution for each facet.
 As result to this process, each paper is classified into the dimensions of each facet. 
 The results are summarized in tables \ref{table:dienviron} to \ref{table:contribution}. 
 The five facets are described bellow.
 
-\textbf{Data Integration Environment facet} (See table~\ref{table:dienviron}). 
+\textbf{Data Integration Environment facet} (See table~\ref{table:dimensions}). 
 Represents the environment (architecture and deployment) in which data integration is being applied.
 The dimensions to this facet are: Cloud, Data Warehouse, Federated Database and Multi-cloud.
-\begin{table}[h]
+%\begin{table}[h]
+%\begin{center}
+%\begin{tabular}{p{4cm}p{10cm}}
+%\hline 
+%\textbf{Dimension} & \textbf{Publication} \\ 
+%\hline 
+%Cloud & 
+%\cite{106,110,105,107,108,109,068,070,072,113,073,074,075,076,077,078,079,081,082,083,085,087,088,089,090,094,095,096,097,098,099,100,102,103}\\ 
+%\hline 
+%Data Warehouse & \cite{066,114,091} \\ 
+%\hline 
+%Federated Database & \cite{071,089,112} \\ 
+%\hline 
+%Multi-cloud & \cite{012,071,093} \\ 
+%\hline 
+%\end{tabular}
+%\end{center}
+%\caption{Data Integration Environment facet}\label{table:dienviron}
+%\end{table}
+
+\textbf{Data Integration Description facet} (See table~\ref{table:dimensions}).
+Indicates the strategy used by authors in order to achieve data integration. 
+The dimensions to this facet are: Knowledge, Metadata and Schema.
+%\begin{table}[h]
+%\begin{center}
+%\begin{tabular}{p{4cm}p{10cm}}
+%\hline 
+%\textbf{Dimension} & \textbf{Publication} \\ 
+%\hline 
+%Knowledge & \cite{012,083} \\ 
+%\hline 
+%Metadata & \cite{108,066,113} \\ 
+%\hline 
+%Schema & \cite{070,071,072,073,075,114,083,089,091,112,102} \\ 
+%\hline 
+%\end{tabular}
+%\end{center}
+%\caption{Data Integration Description facet}\label{table:didesc}
+%\end{table}
+
+\textbf{Data Quality facet} (See table~\ref{table:dimensions}). 
+Refers to data quality parameters applied in the publication. 
+The dimensions are: Confidentiality, Privacy, Security, SLA, Data Protection, Data Provenance and Others.
+Note that a publication is classified in the SLA dimension when it does not focus on a specific quality parameter, but in general uses a SLA contract in order to specify one or more.
+%\begin{table}[h]
+%\begin{center}
+%\begin{tabular}{p{4cm}p{10cm}}
+%\hline 
+%\textbf{Dimension} & \textbf{Publication} \\ 
+%\hline 
+%Confidentiality & \cite{104,109,111,024} \\ 
+%\hline 
+%Privacy & \cite{109,111,007,067,068,113,024,047,095,096} \\ 
+%\hline 
+%Security & \cite{109,113,081,093,112,065} \\ 
+%\hline 
+%SLA  &\cite{044,001,002,007,008,009,011,012,013,014,015,016,017,018,019,046,020,021,022,024,025,026,027,028,029,030,031,032,035,034,036,037,038,039,040,041,042,023,043,045,047,048,049,050,051,052,053,054,055,056,057,058,060,059,061,062,063,064,065,033}\\
+%\hline 
+%Data Protection & \cite{106,104,047} \\ 
+%\hline 
+%Data Provenance & \cite{012} \\ 
+%\hline 
+%Others & \cite{071,093,100} \\ 
+%\hline 
+%\end{tabular}
+%\end{center}
+%\caption{Data Quality facet}\label{table:dq}
+%\end{table}
+
+\textbf{SLA facet} (See table~\ref{table:dimensions}).
+This facet is devote to present how the SLA is mainly used in the publication. 
+The dimension for this facet are: Language, Model, Resources and Security.
+It is important to see that SLA appears as a dimension and as a facet.
+As a facet, we are interest in the way SLA is used. 
+As a dimension, it is just to indicate that the work
+applies SLA in your solution.
+%\begin{table}[h]
+%\begin{center}
+%\begin{tabular}{p{4cm}p{10cm}}
+%\hline 
+%\textbf{Dimension} & \textbf{Publication} \\ 
+%\hline 
+%Language & \cite{003,037,039,041,055,056,061} \\ 
+%\hline 
+%Model & \cite{044,001,002,005,003,006,007,008,009,010,012,013,014,015,016,017,018,019,046,020,021,022,024,026,027,028,029,030,031,032,035,036,038,040,042,023,043,045,047,048,049,050,051,053,054,055,057,058,060,059,061,063,033}\\ 
+%\hline 
+%Resources & \cite{110,053,064} \\ 
+%\hline 
+%Security & \cite{109,011,113,025,035,034,081,038,049,050,052,093,062,112,065} \\ 
+%\hline 
+%\end{tabular}
+%\end{center}
+%\caption{SLA facet}\label{table:sla}
+%\end{table}
+
+\textbf{Contribution facet} (See table~\ref{table:dimensions}).
+Express the kind of contribution proposed by the author. 
+The dimensions are Tool, Literature Analysis, Method, Model, Process and Extended Study.
+%\begin{table}[h]
+%\begin{center}
+%\begin{tabular}{p{4cm}p{10cm}}
+%\hline 
+%\textbf{Dimension} & \textbf{Publication} \\ 
+%\hline 
+%Tool & \cite{110,001,002,005,066,068,070,071,011,014,015,016,019,046,113,024,074,077,026,078,028,029,032,035,081,086,087,088,053,054,091,056,093,094,095,061,112,064,065}\\ 
+%\hline 
+%Literature Analysis & \cite{105,108,109,111,004,003,069,010,073,038,042,089,048,052,099,103} \\ 
+%\hline 
+%Method & \cite{106,107,011,075,076,043,051,092,101,102} \\ 
+%\hline 
+%Model & \cite{044,006,007,066,067,008,009,070,012,071,072,013,017,018,020,114,027,079,030,031,034,036,080,082,037,083,084,039,040,085,041,087,088,045,090,049,050,055,056,057,058,060,059,096,062,098,063,033}\\  
+%\hline 
+%Process & \cite{021,022,025,023,096,100} \\ 
+%\hline 
+%Extended Study & \cite{104,047,097} \\ 
+%\hline 
+%\end{tabular}
+%\end{center}
+%\caption{Contribution facet}\label{table:contribution}
+%\end{table}
+
+\textbf{Research facet} (See table~\ref{table:dimensions}).
+Dedicates to classify in which kind of research the publication can be fitted in. 
+The dimensions to this facet are: Evaluation research, Validation research, Solution proposal 
+and Opinion papers.
+
+%\begin{table}[h]
+%\begin{center}
+%\begin{tabular}{p{4cm}p{10cm}}
+%\hline 
+%\textbf{Dimension} & \textbf{Publication} \\ 
+%\hline 
+%Evaluation research & \cite{008,026,048,069,073,074,089,094,099,102,103,105,111} \\ 
+%\hline 
+%Validation research & \cite{001,002,005,006,007,009,011,012,014,015,016,017,018,019,020,021,022,023,024,025,027,028,029,030,031,032,033,034,036,037,039,045,051,057,059,079,095,098,100,105,112}\\
+%\hline 
+%Solution proposal & \cite{008,035,038,040,041,042,043,044,046,047,048,049,050,051,053,054,055,056,058,060,061,062,063,064,065,066,067,068,070,071,072,075,076,077,078,079,080,081,082,083,084,085,086,087,088,090,091,092,093,094,095,096,097,098,100,101,102,104,106,107,110,113,114}\\
+%\hline 
+%Opinion paper & \cite{003,004,010,013,052,069,073,108,109} \\ 
+%\hline  
+%\end{tabular}
+%\end{center}
+%\caption{Research facet}\label{table:research}
+%\end{table}
+
+\idaniel{New table...}
+\begin{table}[!h]
 \begin{center}
 \begin{tabular}{p{4cm}p{10cm}}
 \hline 
@@ -150,40 +327,11 @@ Federated Database & \cite{071,089,112} \\
 \hline 
 Multi-cloud & \cite{012,071,093} \\ 
 \hline 
-\end{tabular}
-\end{center}
-\caption{Data Integration Environment facet}\label{table:dienviron}
-\end{table}
-
-\textbf{Data Integration Description facet} (See table~\ref{table:didesc}).
-Indicates the strategy used by authors in order to achieve data integration. 
-The dimensions to this facet are: Knowledge, Metadata and Schema.
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{p{4cm}p{10cm}}
-\hline 
-\textbf{Dimension} & \textbf{Publication} \\ 
-\hline 
 Knowledge & \cite{012,083} \\ 
 \hline 
 Metadata & \cite{108,066,113} \\ 
 \hline 
 Schema & \cite{070,071,072,073,075,114,083,089,091,112,102} \\ 
-\hline 
-\end{tabular}
-\end{center}
-\caption{Data Integration Description facet}\label{table:didesc}
-\end{table}
-
-\textbf{Data Quality facet} (See table~\ref{table:dq}). 
-Refers to data quality parameters applied in the publication. 
-The dimensions are: Confidentiality, Privacy, Security, SLA, Data Protection, Data Provenance and Others.
-Note that a publication is classified in the SLA dimension when it does not focus on a specific quality parameter, but in general uses a SLA contract in order to specify one or more.
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{p{4cm}p{10cm}}
-\hline 
-\textbf{Dimension} & \textbf{Publication} \\ 
 \hline 
 Confidentiality & \cite{104,109,111,024} \\ 
 \hline 
@@ -199,24 +347,6 @@ Data Provenance & \cite{012} \\
 \hline 
 Others & \cite{071,093,100} \\ 
 \hline 
-\end{tabular}
-\end{center}
-\caption{Data Quality facet}\label{table:dq}
-\end{table}
-
-\textbf{SLA facet} (See table~\ref{table:sla}).
-This facet is devote to present how the SLA is mainly used in the publication. 
-The dimension for this facet are: Language, Model, Resources and Security.
-It is important to see that SLA appears as a dimension and as a facet.
-As a facet, we are interest in the way SLA is used. 
-As a dimension, it is just to indicate that the work
-applies SLA in your solution.
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{p{4cm}p{10cm}}
-\hline 
-\textbf{Dimension} & \textbf{Publication} \\ 
-\hline 
 Language & \cite{003,037,039,041,055,056,061} \\ 
 \hline 
 Model & \cite{044,001,002,005,003,006,007,008,009,010,012,013,014,015,016,017,018,019,046,020,021,022,024,026,027,028,029,030,031,032,035,036,038,040,042,023,043,045,047,048,049,050,051,053,054,055,057,058,060,059,061,063,033}\\ 
@@ -224,20 +354,6 @@ Model & \cite{044,001,002,005,003,006,007,008,009,010,012,013,014,015,016,017,01
 Resources & \cite{110,053,064} \\ 
 \hline 
 Security & \cite{109,011,113,025,035,034,081,038,049,050,052,093,062,112,065} \\ 
-\hline 
-\end{tabular}
-\end{center}
-\caption{SLA facet}\label{table:sla}
-\end{table}
-
-\textbf{Contribution facet} (See table~\ref{table:contribution}).
-Express the kind of contribution proposed by the author. 
-The dimensions are Tool, Literature Analysis, Method, Model, Process and Extended Study.
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{p{4cm}p{10cm}}
-\hline 
-\textbf{Dimension} & \textbf{Publication} \\ 
 \hline 
 Tool & \cite{110,001,002,005,066,068,070,071,011,014,015,016,019,046,113,024,074,077,026,078,028,029,032,035,081,086,087,088,053,054,091,056,093,094,095,061,112,064,065}\\ 
 \hline 
@@ -251,22 +367,6 @@ Process & \cite{021,022,025,023,096,100} \\
 \hline 
 Extended Study & \cite{104,047,097} \\ 
 \hline 
-\end{tabular}
-\end{center}
-\caption{Contribution facet}\label{table:contribution}
-\end{table}
-
-\textbf{Research facet} (See table~\ref{table:research}).
-Dedicates to classify in which kind of research the publication can be fitted in. 
-The dimensions to this facet are: Evaluation research, Validation research, Solution proposal 
-and Opinion papers.
-
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{p{4cm}p{10cm}}
-\hline 
-\textbf{Dimension} & \textbf{Publication} \\ 
-\hline 
 Evaluation research & \cite{008,026,048,069,073,074,089,094,099,102,103,105,111} \\ 
 \hline 
 Validation research & \cite{001,002,005,006,007,009,011,012,014,015,016,017,018,019,020,021,022,023,024,025,027,028,029,030,031,032,033,034,036,037,039,045,051,057,059,079,095,098,100,105,112}\\
@@ -277,5 +377,7 @@ Opinion paper & \cite{003,004,010,013,052,069,073,108,109} \\
 \hline  
 \end{tabular}
 \end{center}
-\caption{Research facet}\label{table:research}
+\caption{List of publications per dimension}\label{table:dimensions}
 \end{table}
+
+
