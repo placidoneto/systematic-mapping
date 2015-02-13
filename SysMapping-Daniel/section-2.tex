@@ -8,7 +8,26 @@ The proposal takes into account other already existent approaches regarding rewr
 the RDF graph pattern, focus on using data manipulation functions, in order to: (i) solve 
 the entity co-reference problem which can occasion an ineffective data integration; 
 and (ii) exploit ontology alignments with a particular interest in data manipulation. 
-ElSheikh \textit{et al}~\cite{078} ...
+ElSheikh \textit{et al}~\cite{078} developed a system architecture which combines data integration,
+service oriented architecture and distributed processing. The proposed system, called Service 
+Oriented Data Integration based on MapReduce (SODIM), works on a pool of collaborative services and 
+process a large number of data bases represented as web services. 
+Yau \textit{et al}~\cite{YauY08} presented a data integration approach focus on data privacy.
+Their work proposes a privacy preserving repository in order to integrate data from
+different data sharing services. 
+Based on users' integration requirements, the repository helps the process of retrieve and integrate
+data across different services.
+Their system supports the data secure on both sides: in the repository and in the data sharing services. 
+Tian \textit{et al}~\cite{096} proposed an inter-cloud data integration system. 
+Their system works as a mediator between users' privacy requirements and the cost for those data 
+protection and processing.
+According to the users' privacy requirements, the query plan wrapper in the repository cloud will
+create the users' query. This query will be decomposed in sub-queries and for each query the 
+corresponded service provider will be discovered. 
+The sub-queries can be executed both: in the service provider or in the repository cloud.
+Each option has it own charges for privacy and processing. 
+Then, in order to find the better way between privacy and cost the query plan executor decides where 
+the sub-query should be executed.
 
 \subsection{Service level agreement and Data}
 %-[END]-----------------------------------------------------------------------
