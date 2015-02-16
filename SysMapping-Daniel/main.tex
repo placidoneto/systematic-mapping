@@ -46,6 +46,22 @@
 %-[BEGIN]-----------------------------------------------------------------------
 \section{SLA guided Data Integration on Multi-Cloud environments}\label{sec:approach}
 %-[END]-----------------------------------------------------------------------
+Our SLA guided data  integration approach proposes three steps starting from  query processing   to the delivery of  result sets.
+Given a query and a set of QoS preferences (cost, data provenance, service reputation, execution deadline and so on), the system processes it in three steps:  (i)  {\em SLA derivation}, performed to filter possible data and services providers using a set of matching algorithms based on  graph structures and RDF specifications;
+(ii)  {\em query rewriting} for computing possible service compositions giving partial or exhaustive  results according to defined SLAs; (iii)  {\em results  integration} into an answer. 
+These steps generate intermediate results that are stored as knowledge  to reduce the overhead of further query evaluation processes. Moreover, an integrated SLA is generated to archive  negotiated rules obtained during  the integration. For an incoming query, the whole process is monitored to determine whether the integration SLA is being honoured.
+
+Figure~\ref{fig_sim} shows the SLA Guided - Data Integration As A Service (SLAG-DIAAS) architecture  supported by data services which are data providers deployed in a cloud and that provide agreed SLAs. 
+The SLAG-DIAAS keeps a \textit{directory} together with meta-data about the way queries are evaluated for producing results.
+Query processing and monitoring modules use this information for rewriting queries according to given quality of service (QoS) preferences expressed by a data consumer.
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3in]{figs/arch}
+\caption{SLAG-DIAAS architecture}
+\label{fig_sim}
+\end{figure}
+
+
 
 %\section{Infrastructure implemented for the scenario}
 
@@ -53,7 +69,8 @@
 \section{Conclusion and final remarks}\label{sec:conc}
 \input{section-5} % Conclusion ... %
  %-[END]-----------------------------------------------------------------------
-
+This paper introduces the challenge of integrating data from distributed data services deployed on different cloud providers guided by service level agreements (SLA) and user preferences statements. The data integration problem is stated as a continuos data provision problem that has an associated economic cost and that uses automatic learning techniques for ensuring different qualities of delivered data (fresh, precise, partial).
+Current big data settings impose to consider SLA and different data delivery models. We believe that given the volume and the complexity of query evaluation that includes steps that imply greedy computations, it is important to combine and revisit well-known solutions adapted to these contexts. We are currently developing the strategies and algorithms sketched here applied to energy consumption applications as the one described in the paper and also to elections and political campaign data integration in order to guide decision making on campaign strategies.
 %% References with bibTeX database:
 
 \bibliographystyle{plain}
