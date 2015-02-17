@@ -1,7 +1,7 @@
 \section{Our Systematic mapping process}\label{sec:sm}
 
-\iplacido{I changed the word expression `step' to `task' in order to describe
-the methodology `workflow'.}  
+%\iplacido{I changed the word expression `step' to `task' in order to describe
+%the methodology `workflow'.}  
 %We applied the systematic mapping methodology presented
 % in~\cite{SM:Petersen:2008} to our study on SLA-guided data integration on a multi-cloud environments.
 
@@ -16,40 +16,61 @@ the methodology `workflow'.}
 
 % The following subsections describes our first to fourth step in the
 % mapping. %The systematic mapping results are presented in the next section.   
- 
-  
+
+
 %\iplacido{Defining references to the RQs.} 
+
+
 %\subsection{Research questions (RQs)}
 The aim of our systematic mapping process is to identify in the literature how has \textit{SLA-guided
 data integration on a multi-cloud environments} been explored, discover possible
 gaps and the main results produced.    
 In order to achieve this goal we formulated three research questions:
-\begin{enumerate}
-\item \textit{\textbf{RQ1:} Which are the SLA measures that have been applied most in
-the cloud?} This question will help us to identify how SLA values have been
-applied in the claud, and how they are been used.
+
+%\begin{enumerate}
+\paragraph{\textit{\textbf{RQ1:} Which are the SLA measures that have been
+applied most in the cloud?} This question will help us to identify how SLA values have been
+applied in the claud, and how they are been used.}
 
 
-\item \textit{\textbf{RQ2:}  How has the publication of papers on data integration
-involved towards cloud topics?} This question is devoted to measure how
+\paragraph{ \textit{\textbf{RQ2:}  How has the publication of papers on data
+ integration involved towards cloud topics?} This question is devoted to measure how
 publication on data integration are applied towards the cloud computing
-environment.
+environment.}
 
-\item \textit{\textbf{RQ3:} How and in which context have data integration
+\paragraph{ \textit{\textbf{RQ3:} How and in which context have data integration
 guided by QoS models or requirements been explored in the literature?} The main
 goal of this question is to analyse how the literature explores the use of
-SLA-based data integration and in which context it has been applied.
+SLA-based data integration and in which context it has been applied.}
 
 
-\end{enumerate}
+%\end{enumerate}
 
+%\paragraph{\textbf{RQ1:} Which are the SLA measures that have been applied most in
+%the cloud?} 
+%\paragraph{\textbf{RQ2:}  How has the publication of papers on data integration
+%involved towards cloud topics?}
+%\paragraph{\textbf{RQ3:} How and in which context have data integration guided by QoS
+%models or requirements been explored in the literature?}
+
+%\begin{enumerate}
+%\item \textbf{RQ1:} Which are the SLA measures that have been applied most in
+%the cloud?
+%\item \textbf{RQ2:}  How has the publication of papers on data integration
+%involved towards cloud topics?
+%\item \textbf{RQ3:} How and in which context have data integration guided by QoS
+%models or requirements been explored in the literature?
+%\end{enumerate}
+
+%\subsection{Search and selection of papers} \label{subsec:search}
 \subsection{Search and screening of papers} \label{subsec:search}
 
 Based on the research questions and our research interests, a set of keywords were defined in order to 
 retrieve relevant papers.
-As mentioned before, we are interested in merging three different topics: SLA, Data Integration and Multi-cloud.
-According to these keywords and correlated words the search query formulated was:
-\medskip  \\
+%As mentioned before, we are interested in merging three different topics: SLA, Data Integration and Multi-cloud environment.
+The general query formulated using these keywords is below.
+%According to these keywords and correlated words the search query formulated was:
+\medskip
 %\begin{small}
 %\begin{verbatim}
 %(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
@@ -72,36 +93,47 @@ According to these keywords and correlated words the search query formulated was
 %   ("QoS" and "Quality of Service"))
 %\end{verbatim}
 %\end{small}
-\daniel{New format of the query. We saved some space.}
-\begin{small}
-\textit{(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
-   ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
-      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR 
-\medskip        "Hybrid cloud"))} \textbf{OR} \\ 
-\textit{(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
-   ("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
-      "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR }
-\medskip        \textit{ "Distributed databases"))} \textbf{OR} \\
-\textit{(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
-   "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
-      "Distributed databases") AND 
-   ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
-      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR }
-\medskip       \textit{ "Hybrid cloud"))} \textbf{OR} \\
-\textit{(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
-   "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
-      "Distributed databases") AND 
-   ("QoS" and "Quality of Service"))}
-\end{small}
+%\daniel{New format of the query. We saved some space.}
+
+%\begin{small}
+%\textit{(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
+%   ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
+%      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR 
+%\medskip        "Hybrid cloud"))} \textbf{OR} \\ 
+%\textit{(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
+%   ("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
+%      "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR }
+%\medskip        \textit{ "Distributed databases"))} \textbf{OR} \\
+%\textit{(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
+%   "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
+%      "Distributed databases") AND 
+%   ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
+%      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR }
+%\medskip       \textit{ "Hybrid cloud"))} \textbf{OR} \\
+%\textit{(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
+%   "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
+%      "Distributed databases") AND 
+%   ("QoS" and "Quality of Service"))}
+%\end{small}
+%\medskip
+
+\begin{center}
+\textit{("Service level agreement" AND "Data integration" AND "Multi-cloud environment")} \\ 
+\end{center}
 \medskip
 
-We searched and filtered relevant works in four steps.
-In the first step we searched in four scientific databases: IEEE~\footnote{http://ieeexplore.ieee.org/},
+Considering that each scientific database has different search engines, the general query was 
+rewritten in several manners according to each database syntax.
+%We searched and filtered relevant works in four steps.
+%In the first step we searched in four scientific databases: IEEE~\footnote{http://ieeexplore.ieee.org/},
+%ACM~\footnote{http://dl.acm.org/}, Science Direct~\footnote{http://www.sciencedirect.com/} and
+These queries were applied to four databases: IEEE~\footnote{http://ieeexplore.ieee.org/},
 ACM~\footnote{http://dl.acm.org/}, Science Direct~\footnote{http://www.sciencedirect.com/} and
 CiteSeerX~\footnote{http://citeseerx.ist.psu.edu/}.
-We retrieved 1832 publications (See table~\ref{table:pub}).
+%We retrieved 1832 publications (See table~\ref{table:pub}).
+As result, 1832 publications were retrieved (See table~\ref{table:pub}).
 
-\begin{table}[!htb]
+\begin{table}[!ht]
 \begin{center}
 \begin{tabular}{>{\centering\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}p{2.5cm}}
 \toprule
@@ -128,15 +160,21 @@ We retrieved 1832 publications (See table~\ref{table:pub}).
 %This file was used to create a spreadsheet summarizing all papers retrieved, including their abstracts,
 %source, year and authors. 
 
-\daniel{Why did we choose this criteria.}
-We performed the filtering procedure by analyzing the title and the abstract of the papers in the
-third step. 
-Based on our inclusion and exclusion criteria described in the table~\ref{table:criteria}, we looked for 
-papers that are relevant to our study. 
-This criteria was defined taking into account our research interests. 
-We are looking for works regarding data integration on a multi-cloud environment using SLA.
+%\daniel{Why did we choose this criteria.}
+%We performed the filtering procedure by analyzing the title and the abstract of the papers in the
+%third step. 
+In the result, a filtering procedure was performed by analyzing the title and the abstract of the papers. 
+%Based on our inclusion and exclusion criteria described in the table~\ref{table:criteria}, we looked for 
+%papers that are relevant to our study. 
+Once the aim of this papers is to identify works regarding data integration on a multi-cloud environment
+using SLA, and inclusion and an exclusion criteria (described in the table~\ref{table:criteria}) was 
+defined in order to select relevant proposals.
+%This criteria was defined taking into account our research interests. 
+%We are looking for works regarding data integration on a multi-cloud environment using SLA.
 In this process 1718 publications were excluded. 
-The columns \textbf{Included} and \textbf{Excluded} in table~\ref{table:criteria} summarize the number of papers that were considered to each source on our mapping.
+The columns \textbf{Included} and \textbf{Excluded} in table~\ref{table:pub} summarize the number of papers that were considered to each source on our mapping process.
+Finally, the final data collection composed by 114 publications was built.
+%Finally, we biult the final data collection composed by 114 publications.
 
 \begin{table}[!htb]
 \begin{center}
@@ -163,16 +201,16 @@ The columns \textbf{Included} and \textbf{Excluded} in table~\ref{table:criteria
 \caption{Inclusion and exclusion criteria}\label{table:criteria}
 \end{table}
 
-Finally, in the fourth step, we built the final data collection composed by 114 publications.
-
 \subsection{Keywording of abstracts}
 
-\daniel{Why did we choose our facets and dimensions.}
+%\daniel{Why did we choose our facets and dimensions.}
 Considering the criterias discussed previously (subsection~\ref{subsec:search}),
-114 works were selected to our study. 
-According to our research interests, these papers were classified into the five facets. 
-The facets' dimensions were defined based on our knowledge and on the keywording process proposed by the
-methodology.   
+114 works were selected to the study. 
+According to our research interests, these papers were classified using the five facets. 
+%The facets' dimensions were defined based on our knowledge and on the keywording process proposed by the
+%methodology.  
+Each facet has its own dimensions. 
+These dimensions were proposed based on our knowledge and on the keywords found in the abstracts.   
 For each paper, the abstract
 was analyzed in order to identify the contribution for each facet.
 As result to this process, each paper is classified into the dimensions of each facet. 
