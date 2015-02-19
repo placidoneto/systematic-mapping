@@ -3,7 +3,7 @@
 This section contains the background necessary to develop the research.
 There are two different lines of research interesting to the proposal:
 \textit{(i)} data integration on a multi-cloud environment; and
-\textit{(ii)} service level agreements and data.
+\textit{(ii)} service level agreements and data integration.
 
 \subsection{Data integration on multi-cloud environment}
 Correndo \textit{et al}~\cite{075} proposed an method for achieving RDF data integration
@@ -33,9 +33,10 @@ Each option has it own charges for privacy and processing.
 Then, in order to find the better way between privacy and cost the query plan executor decides where 
 the sub-query should be executed.
 
-\subsection{Service level agreement and Data}
+\subsection{Service level agreement and data integration}
+Service level agreements (SLA) contracts have been widely discussed in the context of Cloud computing.
+Approaches concerning (i) The SLA negotiation phase (step in which the contracts are established between customers and providers) and (ii) The monitoring and allocation of cloud resources in order to detect and avoid SLA violations are the center of interest (for example~\cite{SonJ13,Maity14,Wu13,Chen13}). 
 
-
-
-
-%-[END]-----------------------------------------------------------------------
+Regarding the use SLA in the data integration approach, Nie \textit{et al}~\cite{Nie07} proposed a data integration model guided by SLAs in a Grid environment. 
+Their architecture is composed by four parts: (i) \textit{SLA-based Resource Description Model} which describes the database resources; (ii) \textit{SLA-based Query Model} normalizes the different queries based on the SLA information; (iii) \textit{SLA-based Matching Algorithm} and (iv) \textit{SLA-based Evaluation Model} are responsible to select the databases and evaluate them in order to obtain the final query solution.  
+Considering our previous work~\cite{012}, to the best of our knowledge, we have not identified more proposals concerning the use of SLAs combined with a data integration approach.
