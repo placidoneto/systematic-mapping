@@ -46,6 +46,19 @@
 %-[BEGIN]-----------------------------------------------------------------------
 \section{SLA guided Data Integration on Multi-Cloud environments}\label{sec:approach}
 %-[END]-----------------------------------------------------------------------
+
+
+
+% Our work addresses big data collections integration  in a multi-cloud hybrid
+% context guided by user preferences statements and SLA contracts exported by
+% different cloud providers. We propose an SLA guided continuous data provision
+% and integration system exported as a DaaS by a cloud provider adapted to the
+% vision of the economic model of the cloud such as accepting partial results
+% delivered on demand or under predefined subscription models that can affect the
+% quality of the results; accepting specific data duplication that can respect
+% privacy but ensure data availability; accepting to launch a task that
+% contributes to an integration on a first cloud whose SLA verifies a QoS require   
+
 Our SLA guided data  integration approach proposes three steps starting from  query processing   to the delivery of  result sets.
 Given a query and a set of QoS preferences (cost, data provenance, service reputation, execution deadline and so on), the system processes it in three steps:  (i)  {\em SLA derivation}, performed to filter possible data and services providers using a set of matching algorithms based on  graph structures and RDF specifications;
 (ii)  {\em query rewriting} for computing possible service compositions giving partial or exhaustive  results according to defined SLAs; (iii)  {\em results  integration} into an answer. 

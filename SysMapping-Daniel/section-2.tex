@@ -1,9 +1,10 @@
 %-[BEGIN]-----------------------------------------------------------------------
 \section{Related Works}\label{sec:rw}
-This section contains the background necessary to develop the research.
-There are two different lines of research interesting to the proposal:
+%This section contains the background necessary to develop the research.
+Regarding our problem, two different lines of research were targeted:
 \textit{(i)} data integration on a multi-cloud environment; and
 \textit{(ii)} service level agreements and data integration.
+%There are two different lines of research interesting to the proposal:
 
 \subsection{Data integration on multi-cloud environment}
 Correndo \textit{et al}~\cite{075} proposed an method for achieving RDF data integration
@@ -21,22 +22,34 @@ Their work proposes a privacy preserving repository in order to integrate data f
 different data sharing services. 
 Based on users' integration requirements, the repository helps the process of retrieve and integrate
 data across different services.
-Their system supports the data secure on both sides: in the repository and in the data sharing services. 
+Their system supports the data security on both sides: in the repository and in
+the data sharing services.
 Tian \textit{et al}~\cite{096} proposed an inter-cloud data integration system. 
-Their system works as a mediator between users' privacy requirements and the cost for those data 
-protection and processing.
+Their system proposes a trade-off between users' privacy requirements and the
+cost for those data protection and processing.
 According to the users' privacy requirements, the query plan wrapper in the repository cloud will
-create the users' query. This query will be decomposed in sub-queries and for each query the 
-corresponded service provider will be discovered. 
-The sub-queries can be executed both: in the service provider or in the repository cloud.
+create the users' query. This query will be then subdivided into sub-queries for
+which corresponding service providers will be discovered. The sub-queries can
+be then executed both in the service provider or in the repository cloud.
 Each option has it own charges for privacy and processing. 
-Then, in order to find the better way between privacy and cost the query plan executor decides where 
-the sub-query should be executed.
+Then the query plan executor decides the best location to execute the subquery
+to meet privacy and cost objectives.
 
 \subsection{Service level agreement and data integration}
-Service level agreements (SLA) contracts have been widely discussed in the context of Cloud computing.
-Approaches concerning (i) The SLA negotiation phase (step in which the contracts are established between customers and providers) and (ii) The monitoring and allocation of cloud resources in order to detect and avoid SLA violations are the center of interest (for example~\cite{SonJ13,Maity14,Wu13,Chen13}). 
+Service level agreement (SLA) contracts have been widely discussed in the context of Cloud computing.
+Approaches mainly concerne (i) SLA negotiation phase (step in which the
+contracts are established between customers and providers) and (ii)
+monitoring and allocation of cloud resources to detect and avoid SLA
+violations.
 
-Regarding the use SLA in the data integration approach, Nie \textit{et al}~\cite{Nie07} proposed a data integration model guided by SLAs in a Grid environment. 
-Their architecture is composed by four parts: (i) \textit{SLA-based Resource Description Model} which describes the database resources; (ii) \textit{SLA-based Query Model} normalizes the different queries based on the SLA information; (iii) \textit{SLA-based Matching Algorithm} and (iv) \textit{SLA-based Evaluation Model} are responsible to select the databases and evaluate them in order to obtain the final query solution.  
-Considering our previous work~\cite{012}, to the best of our knowledge, we have not identified more proposals concerning the use of SLAs combined with a data integration approach.
+Regarding the use of SLA in data integration approaches, Nie \textit{et
+al}~\cite{Nie07} proposed a data integration model guided by SLAs in a Grid environment.
+Their architecture is subdivided into four parts: (i) a \textit{SLA-based
+Resource Description Model} describes the database resources; (ii)
+a \textit{SLA-based Query Model} normalizes the different queries based on the
+SLA information; (iii) an \textit{SLA-based Matching Algorithm}  
+selects the databases and finally (iv) a \textit{SLA-based Evaluation Model}
+evaluates them in order to obtain the final query solution.
+Considering our previous work~\cite{012}, to the best of our knowledge, we have
+not identified more proposals concerning the use of SLAs combined with a data
+integration approach on multi-cloud context.
