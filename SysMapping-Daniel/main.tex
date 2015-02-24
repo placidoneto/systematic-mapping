@@ -1,13 +1,36 @@
+
+%%%%%%%%%%%%%%%%%%%%%%% file typeinst.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is the LaTeX source for the instructions to authors using
+% the LaTeX document class 'llncs.cls' for contributions to
+% the Lecture Notes in Computer Sciences series.
+% http://www.springer.com/lncs       Springer Heidelberg 2006/05/04
+%
+% It may be used as a template for your own input - copy it
+% to a new file with a new name and use it as the basis
+% for your article.
+% 
+% NB: the document class 'llncs' has its own and detailed documentation, see
+% ftp://ftp.springer.de/data/pubftp/pub/tex/latex/llncs/latex2e/llncsdoc.pdf
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+
 \documentclass{llncs}
-\usepackage{geometry}
-%\geometry{letterpaper}                   % ... or a4paper or a5paper or ...
+
+\usepackage{amssymb}
+\setcounter{tocdepth}{3}
 \usepackage{graphicx}
-\usepackage{xspace}
-\usepackage{amssymb} 
-\usepackage{epstopdf}
-\usepackage{graphicx,color}
-  
-  
+% 
+% \usepackage{geometry}
+% %\geometry{letterpaper}                   % ... or a4paper or a5paper or ...
+% 
+% \usepackage{xspace}
+% 
+% \usepackage{epstopdf}
+% \usepackage{graphicx,color}
+% 
+% 
 \usepackage{datatool}
 \usepackage{tikz}
 \usepackage{pgfplots}
@@ -15,30 +38,84 @@
 \usetikzlibrary{patterns}
 \usepackage{lscape}
 \usepackage{subfig}
-\usepackage{booktabs} % Linhas horizontais para tabelas
-%% The amssymb package provides various useful mathematical symbols
-\usepackage{amssymb}
-%% The amsthm package provides extended theorem environments
-%% \usepackage{amsthm}
-\usepackage{marginnote}
-\newcommand{\daniel}[1]{\marginnote{\textcolor{red}{\textbf{Daniel: }#1}}}
-\newcommand{\idaniel}[1]{\marginpar{\textcolor{red}{\textbf{Daniel: }#1}}}
 
-\newcommand{\placido}[1]{\marginnote{\textcolor{blue}{\textbf{Pl\'acido:
-}#1}}}
-\newcommand{\iplacido}[1]{\marginpar{\textcolor{blue}{\textbf{Pl\'acido:
-}#1}}}
+\usepackage{url}
+\urldef{\mailsa}\path|{alfred.hofmann, ursula.barth, ingrid.haas, frank.holzwarth,|
+\urldef{\mailsb}\path|anna.kramer, leonie.kunz, christine.reiss, nicole.sator,|
+\urldef{\mailsc}\path|erika.siebert-cole, peter.strasser, lncs}@springer.com|    
+\newcommand{\keywords}[1]{\par\addvspace\baselineskip
+\noindent\keywordname\enspace\ignorespaces#1}
 
 \begin{document}
 
-\input{Title-And-Authors}
-  
+\mainmatter  % start of an individual contribution
+
+% first the title is needed
+\title{SLA-based Data Integration on Multi-Cloud Environment}
+
+% a short form should be given in case it is too long for the running head
+%\titlerunning{Lecture Notes in Computer Science: Authors' Instructions}
+
+% the name(s) of the author(s) follow(s) next
+%
+% NB: Chinese authors should write their first names(s) in front of
+% their surnames. This ensures that the names appear correctly in
+% the running heads and the author index.
+%
+\author{
+ Daniel A. S. Carvalho\inst{1}, 
+        Nadia Bennani\inst{2}, 
+        Chirine Ghedira\inst{1}, \\
+        Pl\'acido A. Souza Neto\inst{3}, 
+        Genoveva Vargas-Solar\inst{4}
+}
+%
+\authorrunning{Lecture Notes in Computer Science: Authors' Instructions}
+% (feature abused for this document to repeat the title also on left hand pages)
+
+% the affiliations are given next; don't give your e-mail address
+% unless you accept that it will be published
+\institute{Universit\'e Jean Moulin, Lyon 3 MAGELLAN, IAE -- France \\
+			\email{daniel.carvalho@univ-lyon3.fr, chirine.ghedira-guegan@univ-lyon3.fr}
+		\and
+		CNRS INSA-Lyon, LIRIS, UMR5205 -- France\\
+			\email{nadia.bennani@insa-lyon.fr}
+		\and
+		Instituto Federal do Rio Grande do Norte, Natal -- Brazil \\
+			\email{placido.neto@ifrn.edu.br}
+		\and
+		CNRS, LIG-LAFMIA, Saint Martin d'H\`eres -- France \\
+			\email{genoveva.vargas@imag.fr}
+		}
+
+%
+% NB: a more complex sample for affiliations and the mapping to the
+% corresponding authors can be found in the file "llncs.dem"
+% (search for the string "\mainmatter" where a contribution starts).
+% "llncs.dem" accompanies the document class "llncs.cls".
+%
+
+\maketitle
+
+
+% \begin{abstract}
+% The abstract should summarize the contents of the paper and should
+% contain at least 70 and at most 150 words. It should be written using the
+% \emph{abstract} environment.
+% 
+% \keywords{We would like to encourage you to list your keywords within
+% the abstract section}
+% \end{abstract}
+
+
+%\input{Title-And-Authors}
+
 \input{Abstract-And-Keywords}
-
-\input{section-1} % Introduction %
  
-\input{section-2} 
+\input{section-1} % Introduction %
 
+\input{section-2}
+ 
 \input{section-3} % Mapping Process %
 
 \input{section-4} % Quantitative Analysis %
@@ -61,3 +138,70 @@ Current big data settings impose to consider SLA and different data delivery mod
 
 
 \end{document}
+
+
+
+%%%%=================
+% \documentclass[runningheads,a4paper]{llncs}
+% \usepackage{geometry}
+% %\geometry{letterpaper}                   % ... or a4paper or a5paper or ...
+% \usepackage{graphicx}
+% \usepackage{xspace}
+% \usepackage{amssymb} 
+% \usepackage{epstopdf}
+% \usepackage{graphicx,color}
+%   
+%   
+% \usepackage{datatool}
+% \usepackage{tikz}
+% \usepackage{pgfplots}
+% \usepackage{pgfplotstable}
+% \usetikzlibrary{patterns}
+% \usepackage{lscape}
+% \usepackage{subfig}
+% \usepackage{booktabs} % Linhas horizontais para tabelas
+% %% The amssymb package provides various useful mathematical symbols
+% \usepackage{amssymb}
+% %% The amsthm package provides extended theorem environments
+% %% \usepackage{amsthm}
+% % \usepackage{marginnote}
+% % \newcommand{\daniel}[1]{\marginnote{\textcolor{red}{\textbf{Daniel: }#1}}}
+% % \newcommand{\idaniel}[1]{\marginpar{\textcolor{red}{\textbf{Daniel: }#1}}}
+% % 
+% % \newcommand{\placido}[1]{\marginnote{\textcolor{blue}{\textbf{Pl\'acido:
+% % }#1}}}
+% % \newcommand{\iplacido}[1]{\marginpar{\textcolor{blue}{\textbf{Pl\'acido:
+% % }#1}}}
+% 
+% \begin{document}
+% 
+% \input{Title-And-Authors}
+%   
+% \input{Abstract-And-Keywords}
+% 
+% \input{section-1} % Introduction %
+%  
+% \input{section-2} 
+% 
+% \input{section-3} % Mapping Process %
+% 
+% \input{section-4} % Quantitative Analysis %
+% 
+% %-[BEGIN]-----------------------------------------------------------------------
+% \section{SLA guided Data Integration on Multi-Cloud environments}\label{sec:approach}
+% %-[END]-----------------------------------------------------------------------
+% \input{section-5} % Approach ... %
+% 
+% 
+% 
+% %\section{Infrastructure implemented for the scenario}
+% 
+% \section{Conclusion and final remarks}\label{sec:conc}
+% This paper introduces the challenge of integrating data from distributed data services deployed on different cloud providers guided by service level agreements (SLA) and user preferences statements. The data integration problem is stated as a continuos data provision problem that has an associated economic cost and that uses automatic learning techniques for ensuring different qualities of delivered data (fresh, precise, partial).
+% 
+% Current big data settings impose to consider SLA and different data delivery models. We believe that given the volume and the complexity of query evaluation that includes steps that imply greedy computations, it is important to combine and revisit well-known solutions adapted to these contexts. We are currently developing the strategies and algorithms sketched here applied to energy consumption applications as the one described in the paper and also to elections and political campaign data integration in order to guide decision making on campaign strategies.
+% \bibliographystyle{plain}
+% \bibliography{bibliography,example,biblio}
+% 
+% 
+% \end{document}
