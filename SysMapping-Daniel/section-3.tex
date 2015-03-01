@@ -32,7 +32,7 @@ Our study is guided by  three research questions:
 %In order to achieve this goal we formulated three research questions:
 
 \paragraph{\textit{\textbf{RQ1:} Which are the SLA measures that have been mostly
-applied  in the cloud?}} This question will help  to identify how SLA the type of properties used for characterizing and evaluating the services provided  by different clouds and the type of measures used for evaluating these properties.
+applied  in the cloud?}} This question will help  to identify  the type of properties used for characterizing and evaluating the services provided  by different clouds and the type of measures used for evaluating these properties and expressed in service level agreements.
 
 
 \paragraph{ \textit{\textbf{RQ2:}  How have published papers on data
@@ -49,7 +49,7 @@ ACM~\footnote{http://dl.acm.org/}, Science Direct~\footnote{http://www.sciencedi
 CiteSeerX~\footnote{http://citeseerx.ist.psu.edu/}. We used the following conjunctive and disjunctive general query which was completed with associated terms from a thesaurus and rewritten according to the expression rules of advanced queries in each database: 
 
 
-\medskip
+%\medskip
 %\begin{small}
 %\begin{verbatim}
 %(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
@@ -130,39 +130,41 @@ CiteSeerX~\footnote{http://citeseerx.ist.psu.edu/}. We used the following conjun
 \caption{Number of papers retrieved in each scientific database}\label{table:pub}
 \end{table}
 
-We retrieved  a total of 1832 publications shown in Table~\ref{table:pub}. According to the systematic mapping methodology, the initial collection was cleaned and filtered according to inclusion and exclusion criteria applied as filters when analyzing the titles and abstracts of the papers (see table~\ref{table:criteria}).  In general, we only kept publications written in English, addressing SLA models and languages, quality measures, and/or (multi)-cloud topics related to data integration. As a result of the filtering process we excluded 1718 publications. 
+We retrieved  a total of 1832 publications shown in Table~\ref{table:pub}. According to the systematic mapping methodology, the initial collection was cleaned and filtered according to inclusion and exclusion criteria applied as filters when analyzing the titles and abstracts of the papers. 
+%(see table~\ref{table:criteria}).  
+In general, we only kept publications written in English, addressing SLA models and languages, quality measures, and/or (multi)-cloud topics related to data integration. As a result of the filtering process we excluded 1718 publications. 
 The columns \textit{Included} and \textit{Excluded} in Table~\ref{table:pub} summarize the number of papers per database that were included and excluded for building the final collection with  114 publications.
 
 
-\begin{table}[!htb]
-\begin{center}
-\begin{tabular}{p{10cm}}
-\bottomrule \hline
-\textbf{Inclusion criteria} \\ 
-\hline 
-- The text must be in English \\ 
-- SLA approaches including data integration and/or multi-cloud environments\\
-- Studies regarding SLA and cloud, describing models, languages and security issues \\
-- Works describing improvements to SLA \\
-- Data integration studies including cloud and/or multi-cloud  \\
-- Quality of Service efforts regarding data integration \\
-\bottomrule \hline 
-\textbf{Exclusion criteria} \\ 
-\hline 
-- Publication with only power point version available \\ 
-- SLA approaches regarding resource allocation \\
-- Any paper out of the inclusion criteria  \\
-\bottomrule \hline
-\end{tabular} 
-\end{center}
-\caption{Inclusion and exclusion criteria}\label{table:criteria}
-\end{table}
+%\begin{table}[!htb]
+%\begin{center}
+%\begin{tabular}{p{10cm}}
+%\bottomrule \hline
+%\textbf{Inclusion criteria} \\ 
+%\hline 
+%- The text must be in English \\ 
+%- SLA approaches including data integration and/or multi-cloud environments\\
+%- Studies regarding SLA and cloud, describing models, languages and security issues \\
+%- Works describing improvements to SLA \\
+%- Data integration studies including cloud and/or multi-cloud  \\
+%- Quality of Service efforts regarding data integration \\
+%\bottomrule \hline 
+%\textbf{Exclusion criteria} \\ 
+%\hline 
+%- Publication with only power point version available \\ 
+%- SLA approaches regarding resource allocation \\
+%- Any paper out of the inclusion criteria  \\
+%\bottomrule \hline
+%\end{tabular} 
+%\end{center}
+%\caption{Inclusion and exclusion criteria}\label{table:criteria}
+%\end{table}
 
 %--------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Defining a classification scheme}
 %--------------------------------------------------------------------------------------------------------------------------------------------
 
-We analyzed the titles and abstracts of the papers of the corpus que derived in the previous phase using information retrieval techniques in order to identify the frequent relevant terms. We used this terms for building a classification scheme consisting of five facets the grouped frequent relevant terms. According to the systematic mapping methodology, the relevant frequent keywords are dimensions that represent subcategories within the facets that group them. We define the facets and dimensions of the classification scheme that we propose for studying SLA guided data integration in multi-cloud environments.
+We analyzed the titles and abstracts of the papers of the corpus que derived in the previous phase using information retrieval techniques in order to identify the frequent relevant terms. We used this terms for building a classification scheme consisting of five facets that group frequent relevant terms. According to the systematic mapping methodology, the relevant frequent terms can be considered as dimensions that represent subcategories within the facets that group them. We define the facets and dimensions of the classification scheme that we propose for studying SLA guided data integration in multi-cloud environments.
 %According to our research interests, these papers were classified using the five facets. 
 %The facets' dimensions were defined based on our knowledge and on the keywording process proposed by the
 %methodology.  
@@ -172,7 +174,8 @@ We analyzed the titles and abstracts of the papers of the corpus que derived in 
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
 \paragraph{Data Integration Environment}  
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
-As shown in table~\ref{table:dienviron} this facet groups the dimensions that characterize the architectures used for delivering data integration services ({\em data warehouse} and  {\em federated database}) and  architectures used for deploying these services ({\em cloud} and {\em multi-cloud}).
+%As shown in table~\ref{table:dienviron} 
+This facet groups the dimensions that characterize the architectures used for delivering data integration services ({\em data warehouse} and  {\em federated database}) and  architectures used for deploying these services ({\em cloud} and {\em multi-cloud}).
 %\begin{table}[h]
 %\begin{center}
 %\begin{tabular}{p{4cm}p{10cm}}
@@ -193,29 +196,30 @@ As shown in table~\ref{table:dienviron} this facet groups the dimensions that ch
 %\caption{Data Integration Environment facet}\label{table:dienviron}
 %\end{table}
 
-\begin{table}[!h]
-\begin{center}
-\begin{tabular}{p{4cm}p{4cm}}
-\hline 
-\textbf{Dimension} & \textbf{Publication} \\ 
-\hline 
-Cloud & 34 \\ 
-\hline 
-Data Warehouse & 3 \\ 
-\hline 
-Federated Database & 3 \\ 
-\hline 
-Multi-cloud & 3 \\ 
-\hline 
-\end{tabular}
-\end{center}
-\caption{Data Integration Environment facet:  papers per dimension}\label{table:dienviron}
-\end{table}
+%\begin{table}[!h]
+%\begin{center}
+%\begin{tabular}{p{4cm}p{4cm}}
+%\hline 
+%\textbf{Dimension} & \textbf{Publication} \\ 
+%\hline 
+%Cloud & 34 \\ 
+%\hline 
+%Data Warehouse & 3 \\ 
+%\hline 
+%Federated Database & 3 \\ 
+%\hline 
+%Multi-cloud & 3 \\ 
+%\hline 
+%\end{tabular}
+%\end{center}
+%\caption{Data Integration Environment facet:  papers per dimension}\label{table:dienviron}
+%\end{table}
 
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
 \paragraph{Data Integration Description}
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
- As shown in table~\ref{table:didesc} groups the dimensions describing the type of data used for describing the databases content in order to  integrate them. Data integration can be done by using {\em meta-data, schema}, and {\em knowledge}.
+ %As shown in table~\ref{table:didesc} 
+ This facet groups the dimensions describing the type of data used for describing the databases content in order to  integrate them. Data integration can be done by using {\em meta-data, schema}, and {\em knowledge}.
 %\begin{table}[h]
 %\begin{center}
 %\begin{tabular}{p{4cm}p{10cm}}
@@ -233,27 +237,28 @@ Multi-cloud & 3 \\
 %\caption{Data Integration Description facet}\label{table:didesc}
 %\end{table}
 
-\begin{table}[!h]
-\begin{center}
-\begin{tabular}{p{4cm}p{4cm}}
-\hline 
-\textbf{Dimension} & \textbf{Publication} \\ 
-\hline 
-Knowledge & 2 \\ 
-\hline 
-Metadata & 3 \\ 
-\hline 
-Schema & 11 \\ 
-\hline 
-\end{tabular}
-\end{center}
-\caption{Data Integration Description facet: papers per dimension}\label{table:didesc}
-\end{table}
+%\begin{table}[!h]
+%\begin{center}
+%\begin{tabular}{p{4cm}p{4cm}}
+%\hline 
+%\textbf{Dimension} & \textbf{Publication} \\ 
+%\hline 
+%Knowledge & 2 \\ 
+%\hline 
+%Metadata & 3 \\ 
+%\hline 
+%Schema & 11 \\ 
+%\hline 
+%\end{tabular}
+%\end{center}
+%\caption{Data Integration Description facet: papers per dimension}\label{table:didesc}
+%\end{table}
 
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
 \paragraph{Data Quality} 
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
-As shown in table~\ref{table:dq} this facet groups the dimensions that represent the parameters that can be used for measuring data quality. Measures can related directly to data like {\em confidentiality, privacy, security, protection and provenance} and to the conditions in which it is integrated and delivered like {\em SLA}.
+%As shown in table~\ref{table:dq} 
+This facet groups the dimensions that represent the parameters that can be used for measuring data quality. Measures can be related directly to data for instance {\em confidentiality, privacy, security, protection and provenance} and to the conditions in which data is integrated and delivered  (i.e., dimension {\em SLA}).
 %Note that a publication is classified in the SLA dimension when it does not focus on a specific quality parameter, but in general uses a SLA contract in order to specify one or more.
 %\begin{table}[h]
 %\begin{center}
@@ -280,36 +285,37 @@ As shown in table~\ref{table:dq} this facet groups the dimensions that represent
 %\caption{Data Quality facet}\label{table:dq}
 %\end{table}
 
-\begin{table}[!h]
-\begin{center}
-\begin{tabular}{p{4cm}p{4cm}}
-\hline 
-\textbf{Dimension} & \textbf{Publication} \\ 
-\hline 
-Confidentiality & 4 \\ 
-\hline 
-Privacy & 10 \\ 
-\hline 
-Security & 6 \\ 
-\hline 
-SLA  & 60\\
-\hline 
-Data Protection & 3 \\ 
-\hline 
-Data Provenance & 1 \\ 
-\hline 
-Others & 3 \\ 
-\hline 
-\end{tabular}
-\end{center}
-\caption{Data Quality: papers per dimension}\label{table:dq}
-\end{table}
+%\begin{table}[!h]
+%\begin{center}
+%\begin{tabular}{p{4cm}p{4cm}}
+%\hline 
+%\textbf{Dimension} & \textbf{Publication} \\ 
+%\hline 
+%Confidentiality & 4 \\ 
+%\hline 
+%Privacy & 10 \\ 
+%\hline 
+%Security & 6 \\ 
+%\hline 
+%SLA  & 60\\
+%\hline 
+%Data Protection & 3 \\ 
+%\hline 
+%Data Provenance & 1 \\ 
+%\hline 
+%Others & 3 \\ 
+%\hline 
+%\end{tabular}
+%\end{center}
+%\caption{Data Quality: papers per dimension}\label{table:dq}
+%\end{table}
 
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
 \paragraph{SLA expression}
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
- Service Level Agreement refers to the contracted delivery time of the service or performance it represents agreements between the user and a system expressed as a combination of weighted measures. 
-As shown in Table~\ref{table:sla} this facet groups dimensions describing the way SLA is represented in order to associate it to service provision.
+  refers to the contracted delivery time of the service or its performance. It represents agreements between the user and a system expressed as a combination of weighted measures. 
+%As shown in Table~\ref{table:sla} 
+This facet groups dimensions describing the way SLA is represented in order to associate it to service provision.
 SLA can be expressed using a  {\em language},  {\em model}, {\em resources} concerned by SLA and degree of  {\em security} provided by a data integration service.
 
 %\begin{table}[h]
@@ -331,29 +337,30 @@ SLA can be expressed using a  {\em language},  {\em model}, {\em resources} conc
 %\caption{SLA facet}\label{table:sla}
 %\end{table}
 
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{p{4cm}p{4cm}}
-\hline 
-\textbf{Dimension} & \textbf{Publication} \\ 
-\hline 
-Language & 7 \\ 
-\hline 
-Model & 53 \\ 
-\hline 
-Resources & 3 \\ 
-\hline 
-Security & 15 \\ 
-\hline 
-\end{tabular}
-\end{center}
-\caption{SLA expression facet: papers per dimension}\label{table:sla}
-\end{table}
+%\begin{table}[h]
+%\begin{center}
+%\begin{tabular}{p{4cm}p{4cm}}
+%\hline 
+%\textbf{Dimension} & \textbf{Publication} \\ 
+%\hline 
+%Language & 7 \\ 
+%\hline 
+%Model & 53 \\ 
+%\hline 
+%Resources & 3 \\ 
+%\hline 
+%Security & 15 \\ 
+%\hline 
+%\end{tabular}
+%\end{center}
+%\caption{SLA expression facet: papers per dimension}\label{table:sla}
+%\end{table}
 
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
 \paragraph{Contribution} 
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
-As shown in table~\ref{table:contribution} groups dimensions representing the kind of contribution proposed for addressing data integration. Contributions can concern abstractions like a
+%As shown in table~\ref{table:contribution} 
+This facet groups dimensions representing the kind of contribution proposed for addressing data integration. Contributions can concern abstractions like a
   {\em method}, a  {\em model}, or a {\em process}, software {\em tools} or bibliographic and systems analysis like {\em literature analysis} and {\em extended studies}.
 %\begin{table}[h]
 %\begin{center}
@@ -378,33 +385,34 @@ As shown in table~\ref{table:contribution} groups dimensions representing the ki
 %\caption{Contribution facet}\label{table:contribution}
 %\end{table}
 
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{p{4cm}p{4cm}}
-\hline 
-\textbf{Dimension} & \textbf{Publication} \\ 
-\hline 
-Tool & 39\\ 
-\hline 
-Literature Analysis & 16 \\ 
-\hline 
-Method & 10 \\ 
-\hline 
-Model & 48 \\  
-\hline 
-Process & 6 \\ 
-\hline 
-Extended Study & 3 \\ 
-\hline 
-\end{tabular}
-\end{center}
-\caption{Contribution facet: papers per dimension}\label{table:contribution}
-\end{table}
+%\begin{table}[h]
+%\begin{center}
+%\begin{tabular}{p{4cm}p{4cm}}
+%\hline 
+%\textbf{Dimension} & \textbf{Publication} \\ 
+%\hline 
+%Tool & 39\\ 
+%\hline 
+%Literature Analysis & 16 \\ 
+%\hline 
+%Method & 10 \\ 
+%\hline 
+%Model & 48 \\  
+%\hline 
+%Process & 6 \\ 
+%\hline 
+%Extended Study & 3 \\ 
+%\hline 
+%\end{tabular}
+%\end{center}
+%\caption{Contribution facet: papers per dimension}\label{table:contribution}
+%\end{table}
 
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
 \paragraph{Paper type}
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
-As shown in   Table~\ref{table:research} this facet groups dimensions representing the type and purpose of the papers that address data integration: {\em evaluation, validation, solution} and {\em  position}.
+%As shown in   Table~\ref{table:research} 
+This facet groups dimensions representing the type and purpose of the papers that address data integration: {\em evaluation, validation, solution} and {\em  position}.
 
 %\begin{table}[h]
 %\begin{center}
@@ -425,24 +433,24 @@ As shown in   Table~\ref{table:research} this facet groups dimensions representi
 %\caption{Research facet}\label{table:research}
 %\end{table}
 
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{p{4cm}p{4cm}}
-\hline 
-\textbf{Dimension} & \textbf{Publication} \\ 
-\hline 
-Evaluation research & 13 \\ 
-\hline 
-Validation research & 41 \\
-\hline 
-Solution proposal & 63\\
-\hline 
-Opinion paper & 9 \\ 
-\hline  
-\end{tabular}
-\end{center}
-\caption{Paper type facet: papers per dimension}\label{table:research}
-\end{table}
+%\begin{table}[h]
+%\begin{center}
+%\begin{tabular}{p{4cm}p{4cm}}
+%\hline 
+%\textbf{Dimension} & \textbf{Publication} \\ 
+%\hline 
+%Evaluation research & 13 \\ 
+%\hline 
+%Validation research & 41 \\
+%\hline 
+%Solution proposal & 63\\
+%\hline 
+%Opinion paper & 9 \\ 
+%\hline  
+%\end{tabular}
+%\end{center}
+%\caption{Paper type facet: papers per dimension}\label{table:research}
+%\end{table}
 
 %\idaniel{New table...}
 %\begin{table}[!h]
