@@ -1,5 +1,5 @@
 %. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-\section{Our Systematic mapping process}\label{sec:sm}
+\section{Data integration challenges: classification scheme}\label{sec:sm}
 %. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 
 %\iplacido{I changed the word expression `step' to `task' in order to describe
@@ -161,10 +161,10 @@ The columns \textit{Included} and \textit{Excluded} in Table~\ref{table:pub} sum
 %\end{table}
 
 %--------------------------------------------------------------------------------------------------------------------------------------------
-\subsection{Defining a classification scheme}
+\subsection{Defining classification facets}
 %--------------------------------------------------------------------------------------------------------------------------------------------
 
-We analyzed the titles and abstracts of the papers of the corpus que derived in the previous phase using information retrieval techniques in order to identify the frequent relevant terms. We used this terms for building a classification scheme consisting of five facets that group frequent relevant terms. According to the systematic mapping methodology, the relevant frequent terms can be considered as dimensions that represent subcategories within the facets that group them. We define the facets and dimensions of the classification scheme that we propose for studying SLA guided data integration in multi-cloud environments.
+We analyzed the titles and abstracts of the papers of the corpus que derived in the previous phase using information retrieval techniques in order to identify the frequent relevant terms. We used this terms for building a classification scheme consisting of three facets that group frequent relevant terms. According to the systematic mapping methodology, the relevant frequent terms can be considered as dimensions that represent subcategories within the facets that group them. We define the facets and dimensions of the classification scheme that we propose for studying SLA guided data integration in multi-cloud environments.
 %According to our research interests, these papers were classified using the five facets. 
 %The facets' dimensions were defined based on our knowledge and on the keywording process proposed by the
 %methodology.  
@@ -311,12 +311,12 @@ This facet groups the dimensions that represent the parameters that can be used 
 %\end{table}
 
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
-\paragraph{SLA expression}
+%\paragraph{SLA expression}
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
-  refers to the contracted delivery time of the service or its performance. It represents agreements between the user and a system expressed as a combination of weighted measures. 
+%  refers to the contracted delivery time of the service or its performance. It represents agreements between the user and a system expressed as a combination of weighted measures. 
 %As shown in Table~\ref{table:sla} 
-This facet groups dimensions describing the way SLA is represented in order to associate it to service provision.
-SLA can be expressed using a  {\em language},  {\em model}, {\em resources} concerned by SLA and degree of  {\em security} provided by a data integration service.
+%This facet groups dimensions describing the way SLA is represented in order to associate it to service provision.
+%SLA can be expressed using a  {\em language},  {\em model}, {\em resources} concerned by SLA and degree of  {\em security} provided by a data integration service.
 
 %\begin{table}[h]
 %\begin{center}
@@ -357,11 +357,11 @@ SLA can be expressed using a  {\em language},  {\em model}, {\em resources} conc
 %\end{table}
 
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
-\paragraph{Contribution} 
+%\paragraph{Contribution} 
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
 %As shown in table~\ref{table:contribution} 
-This facet groups dimensions representing the kind of contribution proposed for addressing data integration. Contributions can concern abstractions like a
-  {\em method}, a  {\em model}, or a {\em process}, software {\em tools} or bibliographic and systems analysis like {\em literature analysis} and {\em extended studies}.
+%This facet groups dimensions representing the kind of contribution proposed for addressing data integration. Contributions can concern abstractions like a
+  %{\em method}, a  {\em model}, or a {\em process}, software {\em tools} or bibliographic and systems analysis like {\em literature analysis} and {\em extended studies}.
 %\begin{table}[h]
 %\begin{center}
 %\begin{tabular}{p{4cm}p{10cm}}
@@ -409,10 +409,10 @@ This facet groups dimensions representing the kind of contribution proposed for 
 %\end{table}
 
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
-\paragraph{Paper type}
+%\paragraph{Paper type}
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
 %As shown in   Table~\ref{table:research} 
-This facet groups dimensions representing the type and purpose of the papers that address data integration: {\em evaluation, validation, solution} and {\em  position}.
+%This facet groups dimensions representing the type and purpose of the papers that address data integration: {\em evaluation, validation, solution} and {\em  position}.
 
 %\begin{table}[h]
 %\begin{center}
@@ -528,11 +528,4 @@ This facet groups dimensions representing the type and purpose of the papers tha
 %\end{table}
 
 Facets define the classification scheme we used for  classifying the papers in the corpus according to dimensions. 
-Each paper can be classified into one or several dimensions of each facet. 
-%Tables \ref{table:dienviron} to \ref{table:research} summarize the classification results.
-
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=0.42]{figs/bubble-charts/PublicationsPerYear.pdf} 
-\caption{Publications Per Year}\label{fig:pubperyear}
-\end{figure}
+Each paper can be classified into one or several dimensions of each facet.
