@@ -1,7 +1,3 @@
-%. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-\section{Data integration challenges: classification scheme}\label{sec:sm}
-%. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-
 %\iplacido{I changed the word expression `step' to `task' in order to describe
 %the methodology `workflow'.}  
 %We applied the systematic mapping methodology presented
@@ -26,19 +22,18 @@
 %multi-cloud environments} has been explored in the literature, and discover
 %possible gaps and issues.
 
-The aim of our bibliographic study using the systematic mapping methodology \cite{SM:Petersen:2008}  is to identify   the key contributions and the evolution of the research done on \textit{SLA-guided
-data integration on a multi-cloud environments} and discover open issues and limitations of existing work.    
+The aim of our bibliographic study using the systematic mapping methodology \cite{SM:Petersen:2008} is to categorize and quantify the key contributions and the evolution of the research done on \textit{SLA-guided
+data integration in a multi-cloud environments} and discover open issues and limitations of existing work.    
 Our study is guided by  three research questions:
 %In order to achieve this goal we formulated three research questions:
 
 \paragraph{\textit{\textbf{RQ1:} Which are the SLA measures that have been mostly
 applied  in the cloud?}} This question will help  to identify  the type of properties used for characterizing and evaluating the services provided  by different clouds and the type of measures used for evaluating these properties and expressed in service level agreements.
 
-
-\paragraph{ \textit{\textbf{RQ2:}  How have published papers on data
+\paragraph{\textit{\textbf{RQ2:}  How have published papers on data
  integration evolved towards cloud topics?}} This question is devoted to identify the way  data integration problems addressed in the literature started  to include issues introduced by the cloud.
 
-\paragraph{\textit{\textbf{RQ3:} In which way and in which context has data integration been linked to Quality of Service (QoS) measures in the literature?}} The objective of this question is to understand which QoS measures have been used for evaluating data integration and to determine the conditions in which  specific measures are particularly used.
+\paragraph{\textit{\textbf{RQ3:} In which way and in which context data integration has been linked to Quality of Service (QoS) measures in the literature?}} The objective of this question is to understand which QoS measures have been used for evaluating data integration and to determine the conditions in which  specific measures are particularly used.
 
 %--------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Search and screening of papers} \label{subsec:search}
@@ -529,3 +524,137 @@ This facet groups the dimensions that represent the parameters that can be used 
 
 Facets define the classification scheme we used for  classifying the papers in the corpus according to dimensions. 
 Each paper can be classified into one or several dimensions of each facet.
+
+%------------------------------------------------------------------------------- %
+\subsection{Quantitative Analysis}\label{sec:qanalysis}
+%--------------------------------------------------------------------------------% 
+
+This section discusses the quantitative analysis that we propose as a result of applying the Systematic Mapping methodology.
+Quantitative results are aggregated and presented in bubble charts that combine different facets. 
+In order to observe the evolution of the publication trends we defined a time screen between the years 1998 and 2014 (see Figure \ref{fig:pubperyear}). SLA has emerged when Cloud issues started to be addressed around 2009 and publication has increased as cloud infrastructures have become more popular and accessible. It sees indeed that data integration is an issue combined with SLA and cloud trends that introduce, in our opinion new challenges to the problem. Less recent papers seem to be devoted to the way data is described under a schemata or knowledge representation strategies, this could be due to the fact that these strategies are consolidated today and may be to the emergence of NoSQL approaches with their schema less philosophy. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.42]{figs/bubble-charts/PublicationsPerYear.pdf} 
+\caption{Publications Per Year}\label{fig:pubperyear}
+\end{figure}
+
+
+
+The combination of facets was done for answering the research questions proposed for guiding our study.
+
+%Our analysis presents the frequencies of publications for
+%the choosen facets. The charts show the aggregated view of the number of papers 
+%considering the facets. This approach will help answer the three research
+%questions more objectively.
+
+ 
+%  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .
+\subsubsection{\textit{RQ1: Which are the SLA measures that have been mostly applied  in the cloud?}}
+%  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.45]{figs/bubble-charts/Contribution-SLA-DIdescription.pdf} 
+\caption{Contribution, SLA and Data Integration Description}\label{fig:facet1}
+\end{figure}
+
+The facets SLA expression, data integration description and contribution give elements for determining which SLA measures have been applied to the cloud   (Figure~\ref{fig:facet1}). The resulting bubble chart shows that most contributions propose SLA models and that  \textit{privacy}
+and \textit{security} (11 appearances - 9.65\%) are the most popular measures considered by SLA models for the cloud. These measures concern the network, information, data protection and confidentiality in the cloud. Most contributions propose SLA models (53 appearances - 46.49\%)  but some languages (8 appearances - 7.02\%) have also emerged. {\em Data provenance} is also a measure that emerges but only in papers dealing with multi-cloud environments. Data integration is merely addressed by using schemata (12 appearances - 10.53\%)  and meta-data (4 appearances - 3.51\%) particularly through models (34 appearances - 29.82\%) and tools (25 appearances - 21.93\%). Still, some works propose literature studies (8 appearances - 7.02\%).
+ 
+%The most used type of environment is \textit{cloud}, followed by \textit{data
+%warehouse, multi-cloud} and \textit{federated database}. Looking to the figure
+%you can alse note that models for SLA have been the focus in the papers (53 appearances - 46.49\%) followed by Security (11 appearances - 9.65\%), Language 
+%(8 appearances - 7.02\%) and Resources (3 appearances - 22.83\%).
+%Analyzing the figure is also possible to observe that Model (34 appearances - 29.82\%) and 
+%Tool (25 appearances - 21.93\%) are the mainly type of contribution proposed in the papers 
+%followed by Literature Analysis (8 appearances - 7.02\%), Process (4 appearances - 3.51\%), 
+%Method (3 appearances - 2.63\%) and Extended Study (1 appearance - 0.88\%).
+
+%Regarding the data integration description, Schema (12 appearances - 10.53\%) is
+%the most applied dimension followed by Metadata (4 appearances - 3.51\%) and
+%Knowledge (1 appearance - 0.88\%).
+
+%The limitation of cloud applications, considering SLAs, is the difficulty in
+%determining main reason for service interruptions due to the complex of
+%the environment. Even so, there are few works that consider \textit{data
+%protection} in such cases. One of the challenges of apply SLA in cloud
+%environments is to find the specific need of the application, so as to attack
+%the solution (\textit{security, privacy, confidentiality, data protection} or
+%\textit{data provenace}) in a objectively way, by proposing SLA models, methods,
+%or even new tools.
+
+%  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .
+\subsubsection{\textit{RQ2: How have published papers on data integration evolved towards cloud topics?}}
+%  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.40]{figs/bubble-charts/DI-Environment-Contribution-Research.pdf}
+\caption{facets Data Integration Environment, Contribution and Research}\label{fig:facet2}
+\end{figure}
+
+Combining the facets data integration environment, contribution
+and research it is possible to observe  the evolution of publications on data integration towards the cloud (Figure~\ref{fig:facet2}).  {\em Data warehouse} environments are the most common architecture, this can be explained by the increase of scientific  and industrial applications needing to build integrated  data sets for performing analysis and decision making tasks. The proposals are delivered as {\em models}  (14  appearances - 12.27\%)  and {\em tools} (18
+appearances - 15.78\%)  used for facilitating data integration, mostly done in the {\em cloud}.  The most popular deployment environment of recent papers is the {\em cloud}. Given the maturity of the research addressing data integration it is that most papers present solutions (31 appearances - 27.19\%).
+
+%Analyzing the figure is also possible to observe that Solution (31 appearances -
+%27.19\%) is the type of research most proposed, followed by Evaluation (8
+%appearances - 7.02\%), Validation (5 appearances - 4.39\%) and Opinion (3
+%appearances - 2.63\%).
+
+
+% As cloud becomes more centered in tecnological infraestructure, the
+%challenge of integrating data on the cloud rises as well. 
+
+%The contributions are diverse in respect of \textit{data integration} on the cloud environment. 
+%There are many contributions based \textit{tool} solutions,
+%which is the most frequent considering the analyzed studies. The
+%proposed \textit{tools} used to assist the integration of data in the cloud.
+%The new proposals for models and methods are quite frequent. So, resembling the
+%use of SLA in the cloud, proposed solutions that consider data integration and
+%cloud go in the same direction, new models, methods and tools. The combined
+%analysis of Figures \ref{fig:facet2} and \ref{fig:facet4} answer this question,
+%as we present following.
+
+
+%A few other studies do literature review comparing work and presenting
+%gaps in relation to these two areas. Considering Figure \ref{fig:facet2}, you
+%can verify that most research types presented are new solutions. Others few show validation
+%and evaluation ana;lysis of existing proposals.     
+
+
+%Looking to the Figure ~\ref{fig:facet2} it is possible to identify that Tool  and Model are the mainly type
+%of contribution developed, followed by Literature Analysis (8 appearances -
+%7.02\%), Method (5 appearances - 4.39\%) Process (2 appearances - 1.75\%) and
+%Extended Study (1 appearance - 0.88\%).
+%Analyzing the figure is also possible to observe that Solution (31 appearances -
+%27.19\%) is the type of research most proposed, followed by Evaluation (8
+%appearances - 7.02\%), Validation (5 appearances - 4.39\%) and Opinion (3
+%appearances - 2.63\%).
+ 
+%  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .
+\subsubsection{\textit{RQ3:  In which way and in which context has data integration been linked to QoS measures in the literature?}}
+%  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.44]{figs/bubble-charts/Data-Quality-DI.pdf}
+\caption{Facets Data Quality, Data Integration Environment and Data Integration Description}\label{fig:facet4}
+\end{figure}
+
+Combining the facet data quality with the facets data integration environment and data integration description
+(Figure~\ref{fig:facet4}) it is possible to determine in which way and in which context data integration has been linked to QoS measures in the literature, particularly when associated to data integration environments like cloud  (9.68\%) and multi-cloud (4.39\%).
+
+
+% \textit{Security} and \textit{privacy} the QoS measures that are most discussed together with data integration
+ %(5 papers - 4.39\%). 
+%The figure also shows that SLA has not been widely used in order to address data integration solutions
+%(1 appearance) which reinforces our main objective of integrate SLA, data integration and multi-cloud 
+%environments. 
+%Analyzing the figure is also possible to observe that the most deployed data integration environment is 
+%the cloud (9.68\%) followed by multi-cloud (4.39\%), federated databases (1.75\%) and data warehouse (0.00\%).
+%The data integration description dimensions had the same percentage for schema, knowledge and metadata (2 appearance - 1.75\%)
+
+% Most data integration environment consider cloud for solution. 
+% 
+% The type of contribution envolving data integration most often are
+% \textit{tools} and \textit{models}, respectively. Some few others focus on the
+% proposition of \textit{methods} or \textit{process}. 

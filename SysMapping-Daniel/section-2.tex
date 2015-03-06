@@ -1,5 +1,4 @@
 %-[BEGIN]-----------------------------------------------------------------------
-\section{Related Works}\label{sec:rw}
 %This section contains the background necessary to develop the research.
 Regarding our problem, two different lines of research were targeted:
 \textit{(i)} data integration on a multi-cloud environment; and
@@ -16,34 +15,29 @@ and (ii) exploit ontology alignments with a particular interest in data manipula
 ElSheikh \textit{et al}~\cite{078} developed a system architecture which combines data integration,
 service oriented architecture and distributed processing. The proposed system, called Service 
 Oriented Data Integration based on MapReduce (SODIM), works on a pool of collaborative services and 
-process a large number of data bases represented as web services. 
-Yau \textit{et al}~\cite{YauY08} presented a data integration approach focus on data privacy.
-Their work proposes a privacy preserving repository in order to integrate data from
+process a large number of databases represented as web services. 
+Yau \textit{et al}~\cite{YauY08} presented a data integration approach focused on data privacy.
+They propose a privacy preserving repository in order to integrate data from
 different data sharing services. 
-Based on users' integration requirements, the repository helps the process of retrieve and integrate
-data across different services.
-Their system supports the data security on both sides: in the repository and in
-the data sharing services.
-Tian \textit{et al}~\cite{096} proposed an inter-cloud data integration system. 
-Their system proposes a trade-off between users' privacy requirements and the
-cost for those data protection and processing.
+Based on users' integration requirements, the repository helps the process in retrieving and integrating
+data across different services. Data security is supported on the repository and in the data sharing services as well.
+Tian \textit{et al}~\cite{096} proposed an inter-cloud data integration system that is a trade-off between users' privacy requirements and the cost for those data protection and processing.
 According to the users' privacy requirements, the query plan wrapper in the repository cloud will
 create the users' query. This query will be then subdivided into sub-queries for
 which corresponding service providers will be discovered. The sub-queries can
-be then executed both in the service provider or in the repository cloud.
+be then executed in the service provider or in the repository cloud.
 Each option has it own charges for privacy and processing. 
-Then the query plan executor decides the best location to execute the subquery
-to meet privacy and cost objectives.
+Thus the query plan executor decides the best location to execute the sub-query
+to meet privacy and cost constraints.
 
 \subsection{Service level agreement and data integration}
-Service level agreement (SLA) contracts have been widely discussed in the context of Cloud computing.
-Approaches mainly concerne (i) SLA negotiation phase (step in which the
+Service level agreement (SLA) contracts have been widely adopted in the context of Cloud computing but still are topic of interest in the research community.
+Research contributions mainly concern (i) SLA negotiation phase (step in which the
 contracts are established between customers and providers) and (ii)
 monitoring and allocation of cloud resources to detect and avoid SLA
 violations.
 
-Regarding the use of SLA in data integration approaches, Nie \textit{et
-al}~\cite{Nie07} proposed a data integration model guided by SLAs in a Grid environment.
+In the domain of data integration approaches, Nie \textit{et al}~\cite{Nie07} proposed a data integration model guided by SLAs in a Grid environment.
 Their architecture is subdivided into four parts: (i) a \textit{SLA-based
 Resource Description Model} describes the database resources; (ii)
 a \textit{SLA-based Query Model} normalizes the different queries based on the
@@ -52,4 +46,4 @@ selects the databases and finally (iv) a \textit{SLA-based Evaluation Model}
 evaluates them in order to obtain the final query solution.
 Considering our previous work~\cite{012}, to the best of our knowledge, we have
 not identified more proposals concerning the use of SLAs combined with a data
-integration approach on multi-cloud context.
+integration approach in multi-cloud context.

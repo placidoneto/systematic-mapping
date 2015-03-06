@@ -26,7 +26,7 @@ Services are deployed in different cloud providers and each service exports an a
 %\item[~$\bullet$ ] {\sf agreedSLA:$\langle$cost/call, maxCalls/day, availability, responseTime, reliability, privacy, precision, freshness, provenance$\rangle$}. 
  %\end{trivlist}
  
-As said in previous sections, some of these measures ({\sf cost/call, maxCall/day}) are static and explicitly specified by the service provider. 
+As said aforementioned, some of these measures ({\sf cost/call, maxCall/day}) are static and explicitly specified by the service provider. 
 In contrast, the other measures should be computed by monitoring the conversations between the service and the applications that contact it.  
 
 %In our example assume that there are several energy provision services ({\sf e$_1$, ... e$_n$}) that can be independent or hubs integrating several energy providers. 
@@ -35,7 +35,7 @@ In contrast, the other measures should be computed by monitoring the conversatio
 %\item[~$\bullet$ ]   e$_i$ $\equiv$ provider(KW-h, Ecost, rate, location), \textit{SLA}$_i$
 %\end{trivlist}
 
-Cloud providers define also their SLA contracts defining normally subscription contracts that specify, the cost per request ({\sf cost/request}), the volume of data that can be exchanged per month ({\sf I/0 volume/month}), the cost of transferring data or applications within the same data centre or between data centres ({\sf datatransferCost/region}), the storage space ({\sf storageSpace}). For example some cloud providers enable the customer to choose the zone to install PaaS services and deploy applications (e.g. zone 1 is Europe). If the customer wishes to deploy services in zone 1 but store data in zone 2 the transfer cost will change.
+Cloud providers define also their SLA contracts expressing normally subscription contracts that specify, the cost per request ({\sf cost/request}), the volume of data that can be exchanged per month ({\sf I/0 volume/month}), the cost of transferring data or applications within the same data centre or between data centres ({\sf datatransferCost/region}), and storage space ({\sf storageSpace}). For example some cloud providers enable the customer to choose the zone to install PaaS services and deploy applications (e.g. zone 1 is Europe). If the customer wishes to deploy services in zone 1 but store data in zone 2 the transfer cost will change.
 
 %\begin{trivlist}\sf\footnotesize
 %\item[~$\bullet$ ] {\sf agreedSLA:$\langle$cost/call, maxCalls/day, availability, responseTime, reliability, privacy, precision, freshness, provenance$\rangle$}. 
@@ -44,7 +44,7 @@ Cloud providers define also their SLA contracts defining normally subscription c
  %\end{trivlist}
  
 
-According to our approach, energy producers are modelled as data services with associated ``agreed'' SLAs.
+According to our approach and in our case study, energy producers are modeled as data services with associated ``agreed'' SLAs.
 % In the example, we assume that several producers will be able to supply energy for a given period of time given specific  preferences expressed by a consumer. 
 %Assume that there are four household energy providers that can be queried individually and two hubs that collect information from the community smart-meters.
 %Hubs will store information about (surplus) energy, available from particular users.
