@@ -1,7 +1,6 @@
 
 
-Our SLA guided data  integration approach proposes three steps starting from  query processing   to the delivery of  result sets.
-Given a query and a set of QoS preferences (cost, data provenance, service reputation, execution deadline and so on), the system processes it in three steps:  (i)  {\em SLA derivation}, performed to filter possible data and services providers using a set of matching algorithms based on  graph structures and RDF specifications;
+Our approach for addressing SLA guided data  integration consists in three steps. Given a query, a set of QoS preferences (cost, data provenance, service reputation, execution deadline and so on) and  services that can potentially be data providers:  (i)  {\em SLA derivation}, performed to filter possible data services  using a set of matching algorithms based on  graph structures and RDF specifications;
 (ii)  {\em query rewriting} for computing possible service compositions giving partial or exhaustive  results according to defined SLAs; (iii)  {\em results  integration} into an answer. 
 These steps generate intermediate results that are stored as knowledge  to reduce the overhead of further query evaluation processes. Moreover, an integrated SLA is generated to archive  negotiated rules obtained during  the integration. For an incoming query, the whole process is monitored to determine whether the integration SLA is being honored.
 
@@ -20,13 +19,13 @@ These steps generate intermediate results that are stored as knowledge  to reduc
 %Consumers are described by their location, their energy requirements during a certain interval of time, the maximum total cost they are ready to pay, and quality of service requirements such as availability and how critical it is to consume this amount of energy. 
 %An energy exchange market is established in order to continuously trade  energy provision/consumption ensuring that all consumers will have the energy they require at every moment.
 
-Services are deployed in different cloud providers and each service exports an agreed SLA that specifies the economic cost per call, the maximum number of calls that can be done per day, the availability of the service, the average response time when a method is called, the reliability, the privacy of the produced data (whether they can be stored or not), the precision, freshness and provenance of the produced data. 
+We assume that data services are deployed in different cloud providers and each service exports an agreed SLA that specifies the economic cost per call, the maximum number of calls that can be done per day, the availability of the service, the average response time when a method is called, the reliability, the privacy of the produced data (whether they can be stored or not), the precision, freshness and provenance of the produced data. 
 
 %\begin{trivlist}\sf\footnotesize
 %\item[~$\bullet$ ] {\sf agreedSLA:$\langle$cost/call, maxCalls/day, availability, responseTime, reliability, privacy, precision, freshness, provenance$\rangle$}. 
  %\end{trivlist}
  
-As said aforementioned, some of these measures ({\sf cost/call, maxCall/day}) are static and explicitly specified by the service provider. 
+As  aforementioned, some of these measures ({\sf cost/call, maxCall/day}) are static and explicitly specified by the service provider. 
 In contrast, the other measures should be computed by monitoring the conversations between the service and the applications that contact it.  
 
 %In our example assume that there are several energy provision services ({\sf e$_1$, ... e$_n$}) that can be independent or hubs integrating several energy providers. 
@@ -80,13 +79,13 @@ These combination will influence the decision about the actual services to be us
 %-----------------------------------------------------------------
 The key and original aspect of   our proposed data integration and provision process is  defined as a vertical mapping of user QoS preferences and agreed SLAs. This  leads to a {\em derived SLA} that guides the evaluation of a query. 
 
-A query has associated preferences  expressed as macroscopic constraints (i.e. user preferences statement): execution time, pay / no pay, data reliability, provenance, freshness, privacy, partial/full results, delivery mode. These constraints are coupled with the profile of the user which is in general stated in her cloud subscription (amount of assigned storage space, number of requests, I/O transfered Mega bytes, etc.). 
+A query has associated preferences  expressed as macroscopic constraints (i.e. user preferences statement): execution time, pay / no pay, data reliability, provenance, freshness, privacy, partial/full results, delivery mode. These constraints are coupled with the profile of the user which is in general stated in her cloud subscription (amount of assigned storage space, number of requests, I/O transferred Mega bytes, etc.). 
 
 
 
 %One may think to a first filter to remove the individual services which do not meet some or all of the constraints expressed by the user. 
 
-We assume that services export SLAs (i.e., agreed SLAs) that define measures   that can be either expressed as constants,  computed (dynamically) by monitoring the execution and conversations associted to services, and hybrid they can be statically stated  but they change at execution time.  A service  agreed SLA is expressed through an  XML document using the specification WSLA (Web service level agreement \footnote{\footnotesize http://www.research.ibm.com/people/a/akeller/\-Data/WSLASpecV1-20030128.pdf}). The service SLA measures  that we consider are: response time, availability, price/call, reliability, data production rate. Other measures are associated to the conditions in which the service is called or to the precision and recall of their produced data given a request. 
+We assume that services export SLAs (i.e., agreed SLAs) that define measures   that can be either (i) expressed as constants,  computed (dynamically) by monitoring the execution and conversations associated to services, and (ii) hybrid that can be statically stated  but they change at execution time.  A service  agreed SLA is expressed through an  XML document using the specification WSLA (Web service level agreement \footnote{\footnotesize http://www.research.ibm.com/people/a/akeller/\-Data/WSLASpecV1-20030128.pdf}). The service SLA measures  that we consider are: response time, availability, price/call, reliability, data production rate. Other measures are associated to the conditions in which the service is called or to the precision and recall of their produced data given a request. 
 
 %An example of computed measure is the cost of retrieving the list of energy providers within a region with their KWatt cost. The cost is determined by the  cost of the calls. This request  includes the price of calling a service (e.g.,  between 0,25 - 0,50 euros depending on the data service), plus the price of data transmission according to the amount of trasnmited MegaOctets through the network and the type of subscription of the user for using the network. 
 %Since we assume that services can be deployed on different cloud providers, measures and SLA threasholds can vary.
@@ -212,7 +211,7 @@ The solutions proposed are ranked and may be coded into concrete workflows as sh
  
  Our data provision and integration approach relies on data services deployed on one or different providers and it is delivered as a DaaS. This DaaS  uses resources from a cloud and this use  is  guided by an economic model (stated in a cloud subscription) that puts a threshold on the amount of resources to be invested in a query evaluation process. It is thus important to optimize the use of these resources.
  
- We believe that the optimization of this process can occur at two levels: first at the level of agreed SLA exported by services.  Indeed, queries requesting the same services compositions will have clauses in their SLAs that are more conditions of use of the infrastructure (i.e., not storing the data produced by a service). Instead of recomputing the derived SLA every time, we propose to store it and reuse it for other queries. 
+ We believe that the optimization of this process can occur at two levels: first at the level of agreed SLA exported by services.  Indeed, queries requesting the same services compositions will have clauses in their SLAs that are more conditions of use of the infrastructure (i.e., not storing the data produced by a service). Instead of recomputing the derived SLA every time, we propose to store it and to reuse it for other queries. 
  
 Second, pre-calculated queries and partial results can be also stored in cache or in a persistent support. Rewriting results can be also stored and reduce execution and resources consumption time when evaluating similar queries. Storing or not such SLAs will depend on the cloud subscription of the user the issued the query (data access, intermediate storage capacity , cost of storage , etc ... ).
 %Given this proposal, we identify several issues:
