@@ -1,49 +1,46 @@
 %-[BEGIN]-----------------------------------------------------------------------
 %This section contains the background necessary to develop the research.
-Regarding our problem, two different lines of research were targeted:
+Our work can be compared with works concerning  two different lines of research:
 \textit{(i)} data integration on a multi-cloud environment; and
 \textit{(ii)} service level agreements and data integration.
+
 %There are two different lines of research interesting to the proposal:
 
 \subsection{Data integration on multi-cloud environment}
-Correndo \textit{et al}~\cite{075} proposed an method for achieving RDF data integration
-using SPARQL query rewrinting. 
-The proposal takes into account other already existent approaches regarding rewriting 
-the RDF graph pattern, focus on using data manipulation functions, in order to: (i) solve 
-the entity co-reference problem which can occasion an ineffective data integration; 
+As shown in our classification scheme data integration description is a major topic. Recent works address knowledge oriented approaches for addressing the problem. For example, ~\cite{075} proposes a  query rewriting method for achieving RDF data integration
+using SPARQL. The principle of the approach is to rewrite the RDF graph pattern of the query using data manipulation functions in order to: (i) solve 
+the entity co-reference problem which can lead to ineffective data integration; 
 and (ii) exploit ontology alignments with a particular interest in data manipulation. 
-ElSheikh \textit{et al}~\cite{078} developed a system architecture which combines data integration,
-service oriented architecture and distributed processing. The proposed system, called Service 
-Oriented Data Integration based on MapReduce (SODIM), works on a pool of collaborative services and 
-process a large number of databases represented as web services. 
-Yau \textit{et al}~\cite{YauY08} presented a data integration approach focused on data privacy.
+~\cite{078} introduces the  Service 
+Oriented Data Integration based on MapReduce  system (SODIM)  which combines data integration,
+service oriented architecture and distributed processing. SODIM works on a pool of collaborative services and 
+processes a large number of databases represented as web services. 
+~\cite{YauY08} introduces a data integration approach focussing on data privacy.
 They propose a privacy preserving repository in order to integrate data from
-different data sharing services. 
-Based on users' integration requirements, the repository helps the process in retrieving and integrating
-data across different services. Data security is supported on the repository and in the data sharing services as well.
-Tian \textit{et al}~\cite{096} proposed an inter-cloud data integration system that is a trade-off between users' privacy requirements and the cost for those data protection and processing.
-According to the users' privacy requirements, the query plan wrapper in the repository cloud will
-create the users' query. This query will be then subdivided into sub-queries for
-which corresponding service providers will be discovered. The sub-queries can
-be then executed in the service provider or in the repository cloud.
+different data  services. 
+Based on users' integration requirements, the repository supports the retrieval and integration of
+data across different services. Data security is supported bith on the repository and in the data  services.
+~\cite{096} proposes an inter-cloud data integration system that considers a trade-off between users' privacy requirements and the cost for protecting and processing data.
+According to the users' privacy requirements, the query plan  in the cloud repository 
+creates the users' query. This query is subdivided into sub-queries that can
+be  executed in  service providers or on a cloud repository .
 Each option has it own charges for privacy and processing. 
 Thus the query plan executor decides the best location to execute the sub-query
 to meet privacy and cost constraints.
 
 \subsection{Service level agreement and data integration}
-Service level agreement (SLA) contracts have been widely adopted in the context of Cloud computing but still are topic of interest in the research community.
-Research contributions mainly concern (i) SLA negotiation phase (step in which the
+Service level agreement (SLA) contracts have been widely adopted in the context of Cloud computing. Research contributions mainly concern (i) SLA negotiation phase (step in which the
 contracts are established between customers and providers) and (ii)
 monitoring and allocation of cloud resources to detect and avoid SLA
 violations.
 
-In the domain of data integration approaches, Nie \textit{et al}~\cite{Nie07} proposed a data integration model guided by SLAs in a Grid environment.
+In the domain of data integration approaches ~\cite{Nie07} proposes a data integration model guided by SLAs in a Grid environment.
 Their architecture is subdivided into four parts: (i) a \textit{SLA-based
-Resource Description Model} describes the database resources; (ii)
-a \textit{SLA-based Query Model} normalizes the different queries based on the
+Resource Description Model} that describes the database resources; (ii)
+a \textit{SLA-based Query Model} that normalizes the different queries based on the
 SLA information; (iii) an \textit{SLA-based Matching Algorithm}  
 selects the databases and finally (iv) a \textit{SLA-based Evaluation Model}
-evaluates them in order to obtain the final query solution.
+ to obtain the final query solution.
 Considering our previous work~\cite{012}, to the best of our knowledge, we have
 not identified more proposals concerning the use of SLAs combined with a data
 integration approach in multi-cloud context.
