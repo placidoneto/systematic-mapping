@@ -92,9 +92,10 @@ CiteSeerX~\footnote{http://citeseerx.ist.psu.edu/}. We used the following conjun
 %\medskip
 
 \begin{center}
-\textit{("Service level agreement"  AND "Data integration" AND "Database integration" AND "Cloud" AND "Multi-cloud ")} \\ 
+\textit{("Service level agreement"  AND ("Data integration" OR "Database integration") AND ("Cloud" AND "Multi-cloud "))} \\ 
 \end{center}
 \medskip
+
 
 %Considering that each scientific database has different search engines, the general query was 
 %rewritten in several manners according to each database syntax.
@@ -159,7 +160,7 @@ The columns \textit{Included} and \textit{Excluded} in Table~\ref{table:pub} sum
 \subsection{Defining classification facets}
 %--------------------------------------------------------------------------------------------------------------------------------------------
 
-We analyzed the titles and abstracts of the papers of the corpus que derived in the previous phase using information retrieval techniques in order to identify the frequent relevant terms. We used this terms for building a classification scheme consisting of three facets that group frequent relevant terms. We added two facets for classifying the type of papers (e.g., position, survey, etc.) and the type of contribution (e.g., model, system, language, etc). According to the systematic mapping methodology, the relevant frequent terms in papers can be considered as dimensions that represent subcategories within the facets that group them. The following lines define the facets and dimensions of the classification scheme that we propose for studying SLA guided data integration in multi-cloud environments.
+We analyzed the titles and abstracts of the corpus papers derived in the previous phase using information retrieval techniques in order to identify the frequent relevant terms. We used this terms for building a classification scheme consisting of three facets that group frequent relevant terms. We added two facets for classifying the type of papers (e.g., position, survey, etc.) and the type of contribution (e.g., model, system, language, etc). According to the systematic mapping methodology, the relevant frequent terms in papers can be considered as dimensions that represent subcategories within the facets that group them. The following lines define the facets and dimensions of the classification scheme that we propose for studying SLA guided data integration in multi-cloud environments.
 %According to our research interests, these papers were classified using the five facets. 
 %The facets' dimensions were defined based on our knowledge and on the keywording process proposed by the
 %methodology.  
@@ -563,11 +564,10 @@ The combination of facets was done for answering the research questions proposed
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.45]{figs/bubble-charts/Contribution-SLA-DIdescription.pdf} 
-\caption{Contribution, SLA and Data Integration Description}\label{fig:facet1}
+\caption{Facets Contribution, SLA and Data Integration Description}\label{fig:facet1}
 \end{figure}
 
-The facets SLA expression, data integration description and contribution give elements for determining which SLA measures have been applied to the cloud. 
-% (Figure~\ref{fig:facet1}). 
+The facets SLA expression, data integration description and contribution give elements for determining which SLA measures have been applied to the cloud (Figure~\ref{fig:facet1}). 
 The resulting bubble chart shows that most contributions propose SLA models and that  \textit{privacy}
 and \textit{security} (11 appearances - 9.65\%) are the most popular measures considered by SLA models for the cloud. These measures concern the network, information, data protection and confidentiality in the cloud. Most contributions propose SLA models (53 appearances - 46.49\%)  but some languages (8 appearances - 7.02\%) have also emerged. {\em Data provenance} is also a measure that emerges but only in papers dealing with multi-cloud environments. Data integration is merely addressed by using schemata (12 appearances - 10.53\%)  and meta-data (4 appearances - 3.51\%) particularly through models (34 appearances - 29.82\%) and tools (25 appearances - 21.93\%). Still, some works propose literature studies (8 appearances - 7.02\%).
  
@@ -599,7 +599,7 @@ and \textit{security} (11 appearances - 9.65\%) are the most popular measures co
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.40]{figs/bubble-charts/DI-Environment-Contribution-Research.pdf}
-\caption{facets Data Integration Environment, Contribution and Research}\label{fig:facet2}
+\caption{Facets Data Integration Environment, Contribution and Research}\label{fig:facet2}
 \end{figure}
 
 Combining the facets data integration environment, contribution
