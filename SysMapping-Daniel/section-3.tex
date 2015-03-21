@@ -1,34 +1,11 @@
-%\iplacido{I changed the word expression `step' to `task' in order to describe
-%the methodology `workflow'.}  
-%We applied the systematic mapping methodology presented
-% in~\cite{SM:Petersen:2008} to our study on SLA-guided data integration on a multi-cloud environments.
 
- 
-% \begin{description}
-% \item \textbf{Definition of research question} to define the \textit{research scope};
-% \item \textbf{Conduct search} in order to retrieve \textit{all candidate papers}. Those papers are selected applying a query which express the research interest to scientific databases;
-% \item  \textbf{Screening of papers} to select the \textit{relevant papers} to answer the research question based on a inclusion and exclusion criteria;
-% \item \textbf{Keywording using abstracts} to identify terms that helps on developing the \textit{classification scheme} (mapping categories to classify the papers); and
-% \item \textbf{Data extraction and mapping process} to sort the relevant papers into the mapping categories and produce the systematic mapping.
-% \end{description}
-
-% The following subsections describes our first to fourth step in the
-% mapping. %The systematic mapping results are presented in the next section.   
-
-
-
-%As mentioned before, the aim of our systematic mapping process is first to
-%check how \textit{SLA-guided data integration on a
-%multi-cloud environments} has been explored in the literature, and discover
-%possible gaps and issues.
-
-The aim of our bibliographic study using the systematic mapping methodology \cite{SM:Petersen:2008} is to categorize and quantify the key contributions and the evolution of the research done on \textit{SLA-guided
-data integration in a multi-cloud environments} and discover open issues and limitations of existing work.    
+The aim of our bibliographic study using the systematic mapping methodology \cite{SM:Petersen:2008} is to (i) categorize and quantify the key contributions and the evolution of the research done on \textit{SLA-guided
+data integration in a multi-cloud environment} and  (ii) discover open issues and limitations of existing works.    
 Our study is guided by  three research questions:
-%In order to achieve this goal we formulated three research questions:
+
 
 \paragraph{\textit{\textbf{RQ1:} Which are the SLA measures that have been mostly
-applied  in the cloud?}} This question will help  to identify  the type of properties used for characterizing and evaluating the services provided  by different clouds and the type of measures used for evaluating the properties and expressing them in service level agreements.
+applied  in the cloud?}} This question will help  to identify  the type of properties used for characterizing and evaluating the services provided  by different clouds. It will also help to identify  the type of measures used for evaluating the properties and expressing them in service level agreements.
 
 \paragraph{\textit{\textbf{RQ2:}  How have published papers on data
  integration evolved towards cloud topics?}} This question is devoted to identify the way  data integration problems addressed in the literature started  to include issues introduced by the cloud.
@@ -39,69 +16,18 @@ applied  in the cloud?}} This question will help  to identify  the type of prope
 \subsection{Search and screening of papers} \label{subsec:search}
 %--------------------------------------------------------------------------------------------------------------------------------------------
 
-According to our research questions and our expertise in data integration we chose a set of keywords to define a complex query to be used for retrieving papers from four target publications databases: IEEE~\footnote{http://ieeexplore.ieee.org/},
+According to our research questions and our expertise in data integration we chose a set of keywords to define a complex query to be used for retrieving papers from four target publication databases: IEEE~\footnote{http://ieeexplore.ieee.org/},
 ACM~\footnote{http://dl.acm.org/}, Science Direct~\footnote{http://www.sciencedirect.com/} and
 CiteSeerX~\footnote{http://citeseerx.ist.psu.edu/}. We used the following conjunctive and disjunctive general query which was completed with associated terms from a thesaurus and rewritten according to the expression rules of advanced queries in each database: 
 
 
-%\medskip
-%\begin{small}
-%\begin{verbatim}
-%(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
-%   ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
-%      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR 
-%         "Hybrid cloud")) OR
-%(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
-%   ("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
-%      "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
-%         "Distributed databases")) OR
-%(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
-%   "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
-%      "Distributed databases") AND 
-%   ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
-%      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR 
-%        "Hybrid cloud")) OR
-%(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
-%   "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
-%      "Distributed databases") AND 
-%   ("QoS" and "Quality of Service"))
-%\end{verbatim}
-%\end{small}
-%\daniel{New format of the query. We saved some space.}
 
-%\begin{small}
-%\textit{(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
-%   ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
-%      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR 
-%\medskip        "Hybrid cloud"))} \textbf{OR} \\ 
-%\textit{(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
-%   ("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
-%      "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR }
-%\medskip        \textit{ "Distributed databases"))} \textbf{OR} \\
-%\textit{(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
-%   "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
-%      "Distributed databases") AND 
-%   ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
-%      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR }
-%\medskip       \textit{ "Hybrid cloud"))} \textbf{OR} \\
-%\textit{(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
-%   "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
-%      "Distributed databases") AND 
-%   ("QoS" and "Quality of Service"))}
-%\end{small}
-%\medskip
 
 \begin{center}
-\textit{("Service level agreement"  AND "Data integration" AND "Database integration" AND "Cloud" AND "Multi-cloud ")} \\ 
+\textit{("Service level agreement"  AND ("Data integration" OR "Database integration") AND ("Cloud" AND "Multi-cloud "))} \\ 
 \end{center}
 \medskip
 
-%Considering that each scientific database has different search engines, the general query was 
-%rewritten in several manners according to each database syntax.
-%We searched and filtered relevant works in four steps.
-%In the first step we searched in four scientific databases: IEEE~\footnote{http://ieeexplore.ieee.org/},
-%ACM~\footnote{http://dl.acm.org/}, Science Direct~\footnote{http://www.sciencedirect.com/} and
-%We retrieved 1832 publications (See table~\ref{table:pub}).
 
 
 \begin{table}[!ht]
@@ -131,45 +57,17 @@ In general, we only kept publications written in English, addressing SLA models 
 The columns \textit{Included} and \textit{Excluded} in Table~\ref{table:pub} summarize the number of papers per database that were included and excluded for building the final collection with  114 publications.
 
 
-%\begin{table}[!htb]
-%\begin{center}
-%\begin{tabular}{p{10cm}}
-%\bottomrule \hline
-%\textbf{Inclusion criteria} \\ 
-%\hline 
-%- The text must be in English \\ 
-%- SLA approaches including data integration and/or multi-cloud environments\\
-%- Studies regarding SLA and cloud, describing models, languages and security issues \\
-%- Works describing improvements to SLA \\
-%- Data integration studies including cloud and/or multi-cloud  \\
-%- Quality of Service efforts regarding data integration \\
-%\bottomrule \hline 
-%\textbf{Exclusion criteria} \\ 
-%\hline 
-%- Publication with only power point version available \\ 
-%- SLA approaches regarding resource allocation \\
-%- Any paper out of the inclusion criteria  \\
-%\bottomrule \hline
-%\end{tabular} 
-%\end{center}
-%\caption{Inclusion and exclusion criteria}\label{table:criteria}
-%\end{table}
+
 
 %--------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Defining classification facets}
 %--------------------------------------------------------------------------------------------------------------------------------------------
 
-We analyzed the titles and abstracts of the papers of the corpus que derived in the previous phase using information retrieval techniques in order to identify the frequent relevant terms. We used this terms for building a classification scheme consisting of three facets that group frequent relevant terms. We added two facets for classifying the type of papers (e.g., position, survey, etc.) and the type of contribution (e.g., model, system, language, etc). According to the systematic mapping methodology, the relevant frequent terms in papers can be considered as dimensions that represent subcategories within the facets that group them. The following lines define the facets and dimensions of the classification scheme that we propose for studying SLA guided data integration in multi-cloud environments.
-%According to our research interests, these papers were classified using the five facets. 
-%The facets' dimensions were defined based on our knowledge and on the keywording process proposed by the
-%methodology.  
-%Each facet has its own dimensions. 
-%These dimensions were proposed based on our knowledge and on the keywords found in the abstracts.   
+We analyzed the titles and abstracts of the  papers derived in the previous phase using information retrieval techniques in order to identify the frequent relevant terms. We used these terms for building a classification scheme consisting of three facets that group frequent relevant terms. We added two facets for classifying the type of papers (e.g., position, survey, etc.) and the type of contribution (e.g., model, system, language, etc). According to the systematic mapping methodology, the relevant frequent terms in papers can be considered as dimensions that represent subcategories within the facets that group them. The following lines define the facets and dimensions of the classification scheme that we propose for studying SLA guided data integration in multi-cloud environments.
 
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
 \paragraph{Data Integration Environment}  
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
-%As shown in table~\ref{table:dienviron} 
 This facet groups the dimensions that characterize the architectures used for delivering data integration services ({\em data warehouse} and  {\em federated database}) and  architectures used for deploying these services ({\em cloud} and {\em multi-cloud}).
 %\begin{table}[h]
 %\begin{center}
@@ -524,14 +422,16 @@ This facet groups the dimensions that represent the parameters that can be used 
 
 \begin{figure}[h!]
 \centering
-%\includegraphics[scale=0.42]{figs/bubble-charts/ClassificationScheme.pdf} 
+\includegraphics[scale=0.65]{figs/ClassificationScheme.pdf} 
 \caption{Classification scheme}\label{fig:classificationscheme}
 \end{figure}
 
-Figure \ref{fig:classificationscheme} shows the classification scheme that we propose to characterize data integration in multi-cloud environments considering SLAs. Today, data integration has to do with  classic problems: (i) the approach used for providing a global integrated representation of different data collections described by the facet {\em data integration description} of our scheme. According to the dimensions of our classification, this can be done either by defining a schema (e.g., global and local as view approaches), by tagging data with meta-data or by associating them to knowledge (e.g. semantic Web approaches). (ii) the integration and the deployment architectures used for integrating data described by the facet {\em Data integration environment}. According to our classification scheme data can be integrated in {\em data warehouses} where there is the notion of one repository that stores and sometimes consolidates data stemming from different sources; or in {\em federation} with a mediator aware of the content of different data sources and that can give global access to these distributed data. Finally data warehouses of federations can be deployed on {\em cloud} and {\em multi-cloud} environments. The original vision of our classification scheme is that of adding the notion of {\em quality} to data integration represented by the facet {\em data quality} that groups the measures used for determining data quality that can be eventually integrated in SLAs; and  the facet {\em SLA}  characterizing the way SLAs are expressed and associated to data integration (e.g., model, language). With these facets our classification scheme shows the aspects that must be addressed when addressing data integration in the cloud and considering the quality of data, of the systems that integrate data and the quality warranties that a data consumer can expect thanks to SLAs.
+Figure \ref{fig:classificationscheme} shows the classification scheme that we propose to characterize data integration in multi-cloud environments considering SLAs. Today, data integration has to do with  classic problems: (i) the approach used for providing a global integrated representation of different data collections described by the facet {\em data integration description} of our scheme. According to the dimensions of our classification, this can be done either by defining a schema (e.g., global and local as view approaches), by tagging data with meta-data or by associating them to knowledge (e.g. semantic Web approaches). (ii) The integration and the deployment architectures used for integrating data described by the facet {\em Data integration environment}. According to our classification scheme data can be integrated in {\em data warehouses} where there is the notion of one repository that stores and sometimes consolidates data stemming from different sources; or in a {\em federation} with a mediator aware of the content of different data sources and that can give global access to these distributed data. Finally data warehouses and database federations can be deployed on {\em cloud} and {\em multi-cloud} environments. 
 
-Facets and dimensions define the classification scheme we used for  classifying the papers in the corpus according to dimensions. 
-Each paper can be classified into one or several dimensions of each facet.
+The original vision of our classification scheme is that of adding the notion of {\em quality} to data integration represented by the facet {\em data quality} that groups the measures used for determining data quality that can be  integrated in SLAs; and  the facet {\em SLA}  characterizing the way SLAs are expressed and associated to data integration (e.g., model, language). With these facets our classification scheme shows the aspects that must be considered when addressing data integration in the cloud  taking into account (i) the quality of data, (ii) the systems that integrate data and (iii) the quality warranties that a data consumer can expect expressed in SLAs.
+
+Facets and dimensions define the  scheme we used for  classifying the papers  according to dimensions. 
+Each paper can be classified into one or several dimensions of each facet. This is described in the following section.
 
 %------------------------------------------------------------------------------- %
 \subsection{Quantitative Analysis}\label{sec:qanalysis}
@@ -539,7 +439,7 @@ Each paper can be classified into one or several dimensions of each facet.
 
 This section discusses the quantitative analysis that we propose as a result of applying the Systematic Mapping methodology.
 Quantitative results are aggregated and presented in bubble charts that combine different facets. 
-In order to observe the evolution of the publication trends we defined a time screen between the years 1998 and 2014 (see Figure \ref{fig:pubperyear}). SLA has emerged when Cloud issues started to be addressed around 2009 and publication has increased as cloud infrastructures have become more popular and accessible. It seems indeed that data integration is an issue combined with SLA and cloud trends that introduce, in our opinion new challenges to the problem. Less recent papers seem to be devoted to the way data is described under a schemata or knowledge representation strategies, this could be due to the fact that these strategies are consolidated today and may be to the emergence of NoSQL approaches with their schema less philosophy \cite{sadalage2012nosql}. 
+In order to observe the evolution of the publication trends we defined a time screen between the years 1998 and 2014 (see Figure \ref{fig:pubperyear}). SLA has emerged when Cloud issues started to be addressed around 2009 and publication has increased as cloud infrastructures have become more popular and accessible. It seems indeed that data integration is an open issue when it is combined with SLA and cloud trends. Less recent papers seem to be devoted to the way data is described under schemata or knowledge representation strategies, this could be due to the fact that these strategies are consolidated today and  to the emergence of NoSQL approaches with their schemaless philosophy \cite{sadalage2012nosql}. 
 
 \begin{figure}[h!]
 \centering
@@ -549,7 +449,7 @@ In order to observe the evolution of the publication trends we defined a time sc
 
 
 
-The combination of facets was done for answering the research questions proposed for guiding our study.
+We combined facets  for answering the research questions proposed for guiding our study. The following lines discuss the answers.
 
 %Our analysis presents the frequencies of publications for
 %the choosen facets. The charts show the aggregated view of the number of papers 
@@ -561,17 +461,14 @@ The combination of facets was done for answering the research questions proposed
 \subsubsection{\textit{RQ1: Which are the SLA measures that have been mostly applied  in the cloud?}}
 %  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .
 \begin{figure}[h!]
-\centering 
-%\includegraphics[scale=0.65]{figs/bubble-charts/Contribution-SLA-DIdescription.pdf}
-\includegraphics[width=0.99\textwidth]{figs/bubble-charts/Contribution-SLA-DIdescription.pdf}
-
-\caption{Contribution, SLA and Data Integration Description}\label{fig:facet1}
+\centering
+\includegraphics[scale=0.45]{figs/bubble-charts/Contribution-SLA-DIdescription.pdf} 
+\caption{Facets Contribution, SLA and Data Integration Description}\label{fig:facet1}
 \end{figure}
 
-The facets SLA expression, data integration description and contribution give elements for determining which SLA measures have been applied to the cloud. 
-% (Figure~\ref{fig:facet1}). 
+The facets SLA expression, data integration description and contribution give elements for determining which SLA measures have been applied to the cloud (Figure~\ref{fig:facet1}). 
 The resulting bubble chart shows that most contributions propose SLA models and that  \textit{privacy}
-and \textit{security} (11 appearances - 9.65\%) are the most popular measures considered by SLA models for the cloud. These measures concern the network, information, data protection and confidentiality in the cloud. Most contributions propose SLA models (53 appearances - 46.49\%)  but some languages (8 appearances - 7.02\%) have also emerged. {\em Data provenance} is also a measure that emerges but only in papers dealing with multi-cloud environments. Data integration is merely addressed by using schemata (12 appearances - 10.53\%)  and meta-data (4 appearances - 3.51\%) particularly through models (34 appearances - 29.82\%) and tools (25 appearances - 21.93\%). Still, some works propose literature studies (8 appearances - 7.02\%).
+and \textit{security} (11 papers - 9.65\%) are the most popular measures considered by SLA models for the cloud. These measures concern the network, information, data protection and confidentiality in the cloud. Most contributions propose SLA models (53 papers - 46.49\%)  but some languages (8 papers - 7.02\%) have also emerged. {\em Data provenance} is also a measure that emerges but only in papers dealing with multi-cloud environments. Data integration is merely addressed by using schemata (12 papers - 10.53\%)  and meta-data (4 papers - 3.51\%) particularly through models (34 papers - 29.82\%) and tools (25 papers - 21.93\%). Still, some works propose surveys (8 papers - 7.02\%).
  
 %The most used type of environment is \textit{cloud}, followed by \textit{data
 %warehouse, multi-cloud} and \textit{federated database}. Looking to the figure
@@ -600,15 +497,13 @@ and \textit{security} (11 appearances - 9.65\%) are the most popular measures co
 %  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .
 \begin{figure}[h]
 \centering
-%\includegraphics[scale=0.60]{figs/bubble-charts/DI-Environment-Contribution-Research.pdf}
 \includegraphics[width=0.99\textwidth]{figs/bubble-charts/DI-Environment-Contribution-Research.pdf}
-
 \caption{Facets Data Integration Environment, Contribution and Research}\label{fig:facet2}
 \end{figure}
 
 Combining the facets data integration environment, contribution
-and research it is possible to observe  the evolution of publications on data integration towards the cloud (Figure~\ref{fig:facet2}).  {\em Data warehouse} environments are the most common architecture, this can be explained by the increase of scientific  and industrial applications needing to build integrated  data sets for performing analysis and decision making tasks. The proposals are delivered as {\em models}  (14  appearances - 12.27\%)  and {\em tools} (18
-appearances - 15.78\%)  used for facilitating data integration, mostly done in the {\em cloud}.  The most popular deployment environment of recent papers is the {\em cloud}. Given the importance and crucial need of data integration  most papers present solutions (31 appearances - 27.19\%).
+and research it is possible to observe  the evolution of publications on data integration towards the cloud (Figure~\ref{fig:facet2}).  {\em Data warehouse} environments are the most common architecture. This can be explained by the increase of scientific  and industrial applications needing to build integrated  data sets for performing analysis and decision making tasks. The proposals are delivered as {\em models}  (14  papers - 12.27\%)  and {\em tools} (18
+papers - 15.78\%)  used for facilitating data integration, mostly done in the {\em cloud}.  The most popular deployment environment of recent papers is the {\em cloud}. Given the importance and crucial need of data integration  most papers present concrete solutions as algorithms, methods and systems (31 papers - 27.19\%).
 
 %Analyzing the figure is also possible to observe that Solution (31 appearances -
 %27.19\%) is the type of research most proposed, followed by Evaluation (8
@@ -650,15 +545,14 @@ appearances - 15.78\%)  used for facilitating data integration, mostly done in t
 %  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .
 \begin{figure}[!h]
 \centering
-%\includegraphics[scale=0.44]{figs/bubble-charts/Data-Quality-DI.pdf}
-\includegraphics[width=0.99\textwidth]{figs/bubble-charts/Data-Quality-DI.pdf}
+\includegraphics[width=0.90\textwidth]{figs/bubble-charts/Data-Quality-DI.pdf}
 \caption{Facets Data Quality, Data Integration Environment and Data Integration Description}\label{fig:facet4}
 \end{figure}
 
 Combining the facet data quality with the facets data integration environment and data integration description
-(Figure~\ref{fig:facet4}) it is possible to determine in which way and in which context data integration has been linked to QoS measures in the literature, particularly when associated to data integration environments like cloud  (9.68\%) and multi-cloud (4.39\%).
+(Figure~\ref{fig:facet4}) we answered RQ3. Particularly data integration and QoS measures are associated within environments like cloud  (9.68\%) and multi-cloud (4.39\%).
 
-According to our quantitative analysis we observe that QoS has started to be considered for integrating data, yet the type of measures and properties are diverse. They address measures related to the conditions in which data are accessed like security and privacy. Cloud is becoming a popular environment to perform data integration in which security issues are most frequently addressed. We identify a promising research area concerning the need of studying SLA which is currently addressed  for the cloud as a whole \cite{PedrinaciCL14} but that needs to be specialized for data integration aspects. Therefore it is important to identify the measures that characterize the quality of data but also to the quality measures associated to different phases of data integration (selecting data services, retrieving data, integrating and correlating them and building a query result that can be eventually stored and that must be delivered). These phases are implemented by greedy algorithms and generate intermedia data that can be stored for further use. Therefore they consume storage, computing, processing and communication resources that have an associated economic cost but that must ensure some QoS guarantees to data consumers. This problem seems to be open in the domain, and we believe that it is important in a new vision of data integration. We believe that it is possible to add and enhance the quality of data integration by considering SLAs.
+According to our quantitative analysis we observe that QoS has started to be considered for integrating data, yet the type of measures and properties are diverse. They address measures related to the conditions in which data are accessed like security and privacy. Cloud is becoming a popular environment to perform data integration in which security issues are most frequently addressed. We identify a promising research area concerning the need of studying SLA which is currently addressed  for the cloud as a whole \cite{PedrinaciCL14} but that needs to be specialized for data integration aspects. Therefore, it is important to identify the measures that characterize the quality of data but also to the quality measures associated to different phases of data integration: selecting data services, retrieving data, integrating and correlating them and building a query result that can be eventually stored and that must be delivered. These phases are implemented by greedy algorithms and generate intermediate data that can be stored for further use. Therefore they consume storage, computing, processing and communication resources that have an associated economic cost but that must ensure some QoS guarantees to data consumers. This problem seems to be open in the domain, and we believe that it must be part of  a new vision of data integration. We believe that it is possible to add and enhance the quality of data integration by considering SLAs.
 
 % \textit{Security} and \textit{privacy} the QoS measures that are most discussed together with data integration
  %(5 papers - 4.39\%). 
