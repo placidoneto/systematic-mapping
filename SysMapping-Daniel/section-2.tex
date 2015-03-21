@@ -2,7 +2,7 @@
 %This section contains the background necessary to develop the research.
 Existing works addressing data integration can be grouped according to  two different lines of research that correspond to the facets of the  classification scheme that we propose:
 \textit{(i)} data integration and services; and
-\textit{(ii)} service level agreements and data integration.
+\textit{(ii)} service level agreements and data integration. 
 
 %There are two different lines of research interesting to the proposal:
 
@@ -18,6 +18,8 @@ and (ii) exploit ontology alignments with a particular interest in data manipula
 Oriented Data Integration based on MapReduce  System (SODIM)  which combines data integration,
 service oriented architecture and distributed processing. SODIM works on a pool of collaborative services and can 
 process a large number of databases represented as web services. 
+The novelty of these approaches is that they perform data integration in service oriented contexts, particularly considering data services. They also take into consideration the requirement of computing resources for integrating data.
+
 
 A major concern when integrating data from different sources (services) is privacy that can be associated to the conditions in which integrated data collections are built and shared.
 ~\cite{YauY08} focusses on data privacy based on  a privacy preserving repository in order to integrate data. 
@@ -30,6 +32,7 @@ be  executed in  service providers or on a cloud repository.
 Each option has its own  privacy and processing costs.
 Thus the query plan executor decides the best location to execute the sub-query
 to meet privacy and cost constraints.
+As said before, the most popular "quality" property addressed in clouds when dealing with data is privacy. The majority of works addressing data integration in the cloud tackle security issues. We believe that other SLA measures need to be integrated in the data integration solutions if we want to provide solutions that cope to the characteristics of the cloud and the expectations of data consumers.
 
 %----------------------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Service level agreement and data integration}
@@ -49,4 +52,4 @@ selects the databases and finally (iv) a \textit{SLA-based Evaluation Model}
  to obtain the final query solution.
 Considering our previous work~\cite{012}, to the best of our knowledge, we have
 not identified more proposals concerning the use of SLAs combined with a data
-integration approach in multi-cloud context.
+integration approach in a multi-cloud context.
