@@ -5,11 +5,11 @@ of energy providers that can provision 1000 KW-h, in the next 10 seconds, that a
 Suppose that the user is ready to pay a maximum of \textit{\$5 as total query cost}; she requests that only  \textit{green} energy providers should be  listed (provenance), with at least  \textit{85$\%$} of precision of provided data, even if they are not fresh; she requires an availability rate of at least 90$\%$ and a response time of  \textit{0,01 s}. 
   The question is how can the user efficiently obtain  results for her queries such that they meet her QoS requirements, they respect her subscribed contracts with the involved cloud provider(s) and such that they do not neglect services contracts? 
 
-According to our classification scheme that resulted from our systematic mapping, we propose a new vision of data integration. This vision includes the description of the context in which data integration is done in modern environments. It also identifies the phases of the data integration process with its associated problems and challenges when they must include SLAs and QoS preferences expressed by data consumers. 
+According to our classification scheme that resulted from our systematic mapping, we propose a new vision of data integration. This vision includes the description of the context in which data integration is done in modern environments. It also identifies the phases of the data integration process with their associated problems and challenges when they must include SLAs and QoS preferences expressed by data consumers. 
 
 
 \subsection{Data integration context}
-We consider that data integration is done under new conditions with respect to type of data sources, the environment where it is performed and the preferences  of data consumers and the SLA. We assume that data integration is done on a (multi)-cloud service oriented environment shown in Figure \ref{fig:vision}. 
+We assume that data integration is done on a (multi)-cloud service oriented environment shown in Figure \ref{fig:vision}.  We consider that data integration is done under new conditions with respect to the type of data sources, the environment where it is performed and the preferences  of data consumers and the SLA. 
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.50]{figs/DataIntegrationContext.pdf} 
@@ -36,7 +36,7 @@ In contrast, the other measures should be computed by monitoring the conversatio
 In our vision a query expressed in an SQL-like language is associated to a set of QoS preferences expressing the requirements of the user. For example, the economic cost she is ready to pay for executing the query, the provenance of the data, the reputation of data services and the expected time response. The answer of such a query is the result of integrating data from different services according to a series of phases described in the following section.
 
 \subsection{SLA guided data integration}
-Thus, given a query, its associated QoS preferences, cloud providers  and  services that can potentially be data providers (see Figure \ref{fig:vision}),  SLA guided data  integration can consist in four steps.  
+Given a query, its associated QoS preferences, cloud providers  and  services that can potentially be data providers (see Figure \ref{fig:vision}),  SLA guided data  integration can consist in four steps.  
 %\begin{itemize}
 \paragraph{Generating a derived SLA}  
 The key and original aspect of   our proposed data integration and provision process is  to define  a vertical mapping of user QoS preferences and agreed SLAs. This  leads to a {\em derived SLA} that guides the evaluation of a query. 
@@ -48,7 +48,7 @@ Therefore, we propose to classify SLA measures to represent the relationship bet
 
   
 \paragraph{Filtering data services} 
-The derived SLA  is used for filtering possible data services that can be used for answering the query. This is done using a set of matching algorithms based on  graph structures and RDF specifications. This step may lead either to the rejection of integration in case of total incompatibility, or to a negotiation between SLA which will lead us to the proposal for a negotiated SLA integration and thus the need for an adaptive setting.
+The derived SLA  is used for filtering possible data services that can be used for answering the query. This is done using a set of matching algorithms based on  graph structures and RDF specifications. This step may lead either to the rejection of integration in case of total incompatibility, or to a negotiation between SLA which will lead  to the proposal for a negotiated SLA integration and thus the need for an adaptive setting.
 
 
 \paragraph{Query rewriting} 
