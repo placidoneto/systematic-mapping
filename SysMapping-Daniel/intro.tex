@@ -5,11 +5,6 @@ Integrating and processing heterogeneous Big Data calls for efficient methods fo
 Existing data integration techniques need to be revisited considering weakly curated and modeled data sets provided by different services under different quality conditions. Data integration can be done according to  (i) quality of service (QoS) requirements expressed by their consumers and (ii) Service Level Agreements (SLA)  exported by the cloud providers that host  Big Data and deliver resources for executing the associated management processes. Yet, it is not an easy task to completely enforce SLAs particularly because consumers use several cloud providers to store, integrate and process the data they require under the specific conditions they expect.
 Naturally, a collaboration between cloud providers becomes necessary~\cite{036} but this should be also done in a user-friendly way, with some degree of transparency. 
 
-To better understand, let us consider an example from the domain of energy
-management. We assume we are interested in queries like: \textit{Give a list
-of energy providers that can provision 1000 KW-h, in the next 10 seconds, that are close to my city, with a cost of 0,50 Euro/KW-h and that are labeled as green?} We consider a simplified SLA cloud contract inspired in the cheapest contract provided by Azure: \textit{cost of \$0,05 cents per call,  8~GB of I/O volume/month, free data transfer cost within the same region,  1~GB of storage.} 
-Suppose that the user is ready to pay a maximum of \textit{\$5 as total query cost}; she requests that only  \textit{green} energy providers should be  listed (provenance), with at least  \textit{85$\%$} of precision of provided data, even if they are not fresh; she requires an availability rate of at least 90$\%$ and a response time of  \textit{0,01 s}. 
-  The question is how can the user efficiently obtain  results for her queries such that they meet her QoS requirements, they respect her subscribed contracts with the involved cloud provider(s) and such that they do not neglect services contracts? 
   %Particularly, for queries that call several services deployed  on different clouds.
 
 %\subsection{Contribution}

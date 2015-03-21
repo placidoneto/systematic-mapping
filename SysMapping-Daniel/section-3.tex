@@ -1,31 +1,8 @@
-%\iplacido{I changed the word expression `step' to `task' in order to describe
-%the methodology `workflow'.}  
-%We applied the systematic mapping methodology presented
-% in~\cite{SM:Petersen:2008} to our study on SLA-guided data integration on a multi-cloud environments.
-
- 
-% \begin{description}
-% \item \textbf{Definition of research question} to define the \textit{research scope};
-% \item \textbf{Conduct search} in order to retrieve \textit{all candidate papers}. Those papers are selected applying a query which express the research interest to scientific databases;
-% \item  \textbf{Screening of papers} to select the \textit{relevant papers} to answer the research question based on a inclusion and exclusion criteria;
-% \item \textbf{Keywording using abstracts} to identify terms that helps on developing the \textit{classification scheme} (mapping categories to classify the papers); and
-% \item \textbf{Data extraction and mapping process} to sort the relevant papers into the mapping categories and produce the systematic mapping.
-% \end{description}
-
-% The following subsections describes our first to fourth step in the
-% mapping. %The systematic mapping results are presented in the next section.   
-
-
-
-%As mentioned before, the aim of our systematic mapping process is first to
-%check how \textit{SLA-guided data integration on a
-%multi-cloud environments} has been explored in the literature, and discover
-%possible gaps and issues.
 
 The aim of our bibliographic study using the systematic mapping methodology \cite{SM:Petersen:2008} is to (i) categorize and quantify the key contributions and the evolution of the research done on \textit{SLA-guided
 data integration in a multi-cloud environments} and  (ii) discover open issues and limitations of existing work.    
 Our study is guided by  three research questions:
-%In order to achieve this goal we formulated three research questions:
+
 
 \paragraph{\textit{\textbf{RQ1:} Which are the SLA measures that have been mostly
 applied  in the cloud?}} This question will help  to identify  the type of properties used for characterizing and evaluating the services provided  by different clouds. It will also help to identify  the type of measures used for evaluating the properties and expressing them in service level agreements.
@@ -44,65 +21,13 @@ ACM~\footnote{http://dl.acm.org/}, Science Direct~\footnote{http://www.sciencedi
 CiteSeerX~\footnote{http://citeseerx.ist.psu.edu/}. We used the following conjunctive and disjunctive general query which was completed with associated terms from a thesaurus and rewritten according to the expression rules of advanced queries in each database: 
 
 
-%\medskip
-%\begin{small}
-%\begin{verbatim}
-%(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
-%   ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
-%      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR 
-%         "Hybrid cloud")) OR
-%(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
-%   ("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
-%      "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
-%         "Distributed databases")) OR
-%(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
-%   "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
-%      "Distributed databases") AND 
-%   ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
-%      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR 
-%        "Hybrid cloud")) OR
-%(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
-%   "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
-%      "Distributed databases") AND 
-%   ("QoS" and "Quality of Service"))
-%\end{verbatim}
-%\end{small}
-%\daniel{New format of the query. We saved some space.}
 
-%\begin{small}
-%\textit{(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
-%   ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
-%      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR 
-%\medskip        "Hybrid cloud"))} \textbf{OR} \\ 
-%\textit{(("SLA" OR "Service Level Agreement" OR "Service-Level Agreement") AND 
-%   ("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
-%      "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR }
-%\medskip        \textit{ "Distributed databases"))} \textbf{OR} \\
-%\textit{(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
-%   "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
-%      "Distributed databases") AND 
-%   ("Cloud" OR "Multi-cloud" OR "Multi cloud" OR "Multicloud" OR "Inter-cloud" OR 
-%      "Inter cloud" OR "Intercloud" OR "Federated cloud" OR "Cloud federation" OR }
-%\medskip       \textit{ "Hybrid cloud"))} \textbf{OR} \\
-%\textit{(("Data Integration" OR "Data Integration Systems" OR "Sources Integration" OR 
-%   "Multi Databases" OR "Multi-databases" OR "Multidatabases" OR 
-%      "Distributed databases") AND 
-%   ("QoS" and "Quality of Service"))}
-%\end{small}
-%\medskip
 
 \begin{center}
 \textit{("Service level agreement"  AND ("Data integration" OR "Database integration") AND ("Cloud" AND "Multi-cloud "))} \\ 
 \end{center}
 \medskip
 
-
-%Considering that each scientific database has different search engines, the general query was 
-%rewritten in several manners according to each database syntax.
-%We searched and filtered relevant works in four steps.
-%In the first step we searched in four scientific databases: IEEE~\footnote{http://ieeexplore.ieee.org/},
-%ACM~\footnote{http://dl.acm.org/}, Science Direct~\footnote{http://www.sciencedirect.com/} and
-%We retrieved 1832 publications (See table~\ref{table:pub}).
 
 
 \begin{table}[!ht]
@@ -132,45 +57,17 @@ In general, we only kept publications written in English, addressing SLA models 
 The columns \textit{Included} and \textit{Excluded} in Table~\ref{table:pub} summarize the number of papers per database that were included and excluded for building the final collection with  114 publications.
 
 
-%\begin{table}[!htb]
-%\begin{center}
-%\begin{tabular}{p{10cm}}
-%\bottomrule \hline
-%\textbf{Inclusion criteria} \\ 
-%\hline 
-%- The text must be in English \\ 
-%- SLA approaches including data integration and/or multi-cloud environments\\
-%- Studies regarding SLA and cloud, describing models, languages and security issues \\
-%- Works describing improvements to SLA \\
-%- Data integration studies including cloud and/or multi-cloud  \\
-%- Quality of Service efforts regarding data integration \\
-%\bottomrule \hline 
-%\textbf{Exclusion criteria} \\ 
-%\hline 
-%- Publication with only power point version available \\ 
-%- SLA approaches regarding resource allocation \\
-%- Any paper out of the inclusion criteria  \\
-%\bottomrule \hline
-%\end{tabular} 
-%\end{center}
-%\caption{Inclusion and exclusion criteria}\label{table:criteria}
-%\end{table}
+
 
 %--------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Defining classification facets}
 %--------------------------------------------------------------------------------------------------------------------------------------------
 
 We analyzed the titles and abstracts of the corpus papers derived in the previous phase using information retrieval techniques in order to identify the frequent relevant terms. We used this terms for building a classification scheme consisting of three facets that group frequent relevant terms. We added two facets for classifying the type of papers (e.g., position, survey, etc.) and the type of contribution (e.g., model, system, language, etc). According to the systematic mapping methodology, the relevant frequent terms in papers can be considered as dimensions that represent subcategories within the facets that group them. The following lines define the facets and dimensions of the classification scheme that we propose for studying SLA guided data integration in multi-cloud environments.
-%According to our research interests, these papers were classified using the five facets. 
-%The facets' dimensions were defined based on our knowledge and on the keywording process proposed by the
-%methodology.  
-%Each facet has its own dimensions. 
-%These dimensions were proposed based on our knowledge and on the keywords found in the abstracts.   
 
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
 \paragraph{Data Integration Environment}  
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
-%As shown in table~\ref{table:dienviron} 
 This facet groups the dimensions that characterize the architectures used for delivering data integration services ({\em data warehouse} and  {\em federated database}) and  architectures used for deploying these services ({\em cloud} and {\em multi-cloud}).
 %\begin{table}[h]
 %\begin{center}
