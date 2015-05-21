@@ -1,0 +1,40 @@
+\documentclass{llncs}
+\usepackage{geometry}
+%\geometry{letterpaper}                   % ... or a4paper or a5paper or ...
+\usepackage{graphicx}
+\usepackage{xspace}
+\usepackage{amssymb} 
+\usepackage{epstopdf}
+\usepackage{graphicx,color}
+ 
+  
+\usepackage{datatool}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usetikzlibrary{patterns}
+\usepackage{lscape}
+\usepackage{subfig}
+\usepackage{booktabs} % Linhas horizontais para tabelas
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+\usepackage{marginnote}
+\newcommand{\daniel}[1]{\marginnote{\textcolor{red}{\textbf{Daniel: }#1}}}
+\newcommand{\idaniel}[1]{\marginpar{\textcolor{red}{\textbf{Daniel: }#1}}}
+
+\newcommand{\placido}[1]{\marginnote{\textcolor{blue}{\textbf{Pl\'acido:
+}#1}}}
+\newcommand{\iplacido}[1]{\marginpar{\textcolor{blue}{\textbf{Pl\'acido:
+}#1}}}
+
+\begin{document}
+
+\input{section-3} 
+
+\bibliographystyle{plain}
+\bibliography{publications}
+
+
+\end{document}
