@@ -5,7 +5,7 @@ Our study is guided by  three research questions:
 
 
 \textit{\textbf{RQ1:} Which are the SLA measures that have been mostly
-applied  in the cloud?} This question will help  to identify  the type of
+applied  in the cloud?} This question  identifies  the type of
 properties used for characterizing and evaluating the services provided  by
 different clouds. 
 % It will also help to identify  the type of measures used for
@@ -17,7 +17,7 @@ different clouds.
 \textit{\textbf{RQ3:} In which way and in which  context has data integration  been linked to Quality of Service (QoS) measures in the literature?} The objective of this question is to understand which QoS measures have been used for evaluating data integration and to determine the conditions in which  specific measures are particularly used.
 
 %--------------------------------------------------------------------------------------------------------------------------------------------
-\subsection{Search and screening of papers} \label{subsec:search}
+\subsection{Searching and screening  papers} \label{subsec:search}
 %--------------------------------------------------------------------------------------------------------------------------------------------
 
 According to our research questions and our expertise in data integration we chose a set of keywords to define a complex query to be used for retrieving papers from four target publication databases: IEEE~\footnote{http://ieeexplore.ieee.org/},
@@ -79,12 +79,9 @@ https://github.com/danielboni/DEXA-2015-Can-Data-Integration-Quality-be-Enhanced
 %--------------------------------------------------------------------------------------------------------------------------------------------
 
 We analyzed the titles and abstracts of the  papers derived in the previous
-phase using information retrieval techniques in order to identify the frequent
-relevant terms. We used these terms for building a classification scheme
-consisting of three facets that group frequent relevant terms. 
-According to the systematic mapping methodology, the relevant frequent terms in
-papers can be considered as dimensions that represent subcategories within the facets that
-group them. The following lines define the facets and dimensions of the
+phase using information retrieval techniques  to identify  frequent
+ terms. We used these terms for proposing a classification scheme
+consisting of three facets that group dimensions. The following lines define the facets and dimensions of the
 classification scheme we propose. 
 %  for studying SLA guided data integration
 % in multi-cloud environments.
@@ -140,7 +137,7 @@ This facet groups the dimensions that characterize the architectures used for de
 \textbf{\textit{Data Integration Description:}}
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
  %As shown in table~\ref{table:didesc} 
- This facet groups the dimensions describing the type of data used for describing the databases content in order to  integrate them. Data integration can be done by using {\em meta-data, schema}, and {\em knowledge}.
+ This facet groups the dimensions describing the approaches used for describing the databases content in order to  integrate them. Data integration can be done by using {\em meta-data, schema}, and {\em knowledge}.
 %\begin{table}[h]
 %\begin{center}
 %\begin{tabular}{p{4cm}p{10cm}}
@@ -179,7 +176,7 @@ This facet groups the dimensions that characterize the architectures used for de
 \textbf{\textit{Data Quality:}} 
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
 %As shown in table~\ref{table:dq} 
-This facet groups the dimensions that represent the parameters that can be used for measuring data quality. Measures can be related directly to data for instance {\em confidentiality, privacy, security, protection and provenance} and to the conditions in which data is integrated and delivered  (i.e., dimension {\em SLA}).
+This facet groups the dimensions  representing data quality measures. Measures can be related directly to data for instance {\em confidentiality, privacy, security, protection and provenance} and to the conditions in which data is integrated and delivered  (i.e., dimension {\em SLA}).
 
 % Today, data integration has to do with  classic problems: (i) the approach used
 % for providing a global integrated representation of different data collections
@@ -197,7 +194,11 @@ This facet groups the dimensions that represent the parameters that can be used 
 % and database federations can be deployed on {\em cloud} and {\em multi-cloud}
 % environments.               
 
-The original vision of our classification scheme is that of adding the notion of {\em quality} to data integration represented by the facet {\em data quality} that groups the measures used for determining data quality that can be  integrated in SLAs; and  the facet {\em SLA}  characterizing the way SLAs are expressed and associated to data integration (e.g., model, language). With these facets our classification scheme shows the aspects that must be considered when addressing data integration in the cloud  taking into account (i) the quality of data, (ii) the systems that integrate data and (iii) the quality warranties that a data consumer can expect expressed in SLAs.
+The original vision of our classification scheme is that of adding the notion of {\em quality} to data integration represented by the facets {\em data quality} 
+%that groups the measures used in SLAs; 
+and  {\em SLA}.
+%characterizing the way SLAs are expressed and associated to data integration (e.g., model, language). 
+With these facets our classification scheme shows the aspects that must be considered when addressing data integration in the cloud  taking into account (i) the quality of data, (ii) the systems that integrate data and (iii) the quality warranties that a data consumer can expect expressed in SLAs.
 
 % Facets and dimensions define the  scheme we used for  classifying the papers  according to dimensions. 
 % Each paper can be classified into one or several dimensions of each facet. This is described in the following section.
@@ -206,9 +207,8 @@ The original vision of our classification scheme is that of adding the notion of
 \subsection{Quantitative Analysis}\label{sec:qanalysis}
 %--------------------------------------------------------------------------------% 
 
-This section discusses the quantitative analysis that we propose as a result of applying the Systematic Mapping methodology.
-Quantitative results are aggregated and presented in bubble charts that combine different facets. 
-In order to observe the evolution of the publication trends we defined a time screen between the years 1998 and 2014 (see Figure \ref{fig:pubperyear}). SLA has emerged when Cloud issues started to be addressed around 2009 and publication has increased as cloud infrastructures have become more popular and accessible. It seems indeed that data integration is an open issue when it is combined with SLA and cloud trends. Less recent papers seem to be devoted to the way data is described under schemata or knowledge representation strategies, this could be due to the fact that these strategies are consolidated today and  to the emergence of NoSQL approaches with their schemaless philosophy \cite{sadalage2012nosql}. 
+This section discusses the quantitative analysis  presented in bubble charts that combine different facets. 
+In order to observe the evolution of the publication trends we defined a time screen between the years 1998 and 2014 (see Figure \ref{fig:pubperyear}). SLA has emerged when Cloud issues started to be addressed around 2009. The number of publications has increased as cloud infrastructures have become more popular and accessible. It seems  that data integration is an open issue when it is combined with SLA and cloud trends. Less recent papers seem to be devoted to the way data is described under schemata or knowledge representation strategies. This could be due to the fact that these strategies are consolidated today and  to the emergence of NoSQL approaches with their schema-less philosophy \cite{sadalage2012nosql}. 
 
 \begin{figure}[ht!]
 \centering
@@ -321,28 +321,31 @@ papers - 15.78\%)  used for facilitating data integration, mostly done in the {\
 \caption{Facets Data Quality, Data Integration Environment and Data Integration Description}\label{fig:facet4}
 \end{figure}
 
-Combining the facet data quality with the facets data integration environment and data integration description
-(Figure~\ref{fig:facet4}) we answered RQ3. Particularly data integration and QoS measures are associated within environments like cloud  (9.68\%) and multi-cloud (4.39\%).
+We answered RQ3 by combining the facet {\em data quality} with the facets {\em data integration environment} and {\em data integration description}
+(Figure~\ref{fig:facet4}).  Data integration and QoS measures are associated within environments like cloud  (9.68\%) and multi-cloud (4.39\%).
 
 According to our quantitative analysis we observe that QoS has started to be
-considered for integrating data, yet the type of measures and properties are
-diverse. They address measures related to the conditions in which data are
-accessed like security and privacy. Cloud is becoming a popular environment to
+considered for integrating data. 
+%Papers 
+%Yet, the type of measures and properties are still diverse. 
+%They 
+%address measures related to the conditions in which data are
+%accessed like security and privacy.
+ The cloud is becoming a popular environment to
 perform data integration in which security issues are most frequently addressed.
 We identify a promising research area concerning the need of studying SLA which
 is currently addressed  for the cloud as a whole \cite{PedrinaciCL14} but that
 needs to be specialized for data integration aspects. Therefore, it is important
-to identify the measures that characterize the quality of data but also the
-quality measures associated to different phases of data integration: selecting
+to identify the measures that characterize the quality of data and  the
+quality measures associated to different phases of data integration. These phases include selecting
 data services, retrieving data, integrating and correlating them and building a
-query result that can be eventually stored and that must be delivered. These
-phases are implemented by greedy algorithms and generate intermediate data that
+query result that can be eventually stored and that must be delivered. The data integration phases are implemented by greedy algorithms and generate intermediate data that
 can be stored for further use. Therefore they consume storage, computing,
-processing and communication resources that have an associated economic cost but
-that must ensure some QoS guarantees to data consumers. This problem seems to be
+processing and communication resources that have an associated economic cost. These resources 
+ must ensure some QoS guarantees to data consumers. This problem seems to be
 open in the domain, and we believe that it must be part of  a new vision of data
 integration. We believe that it is possible to add and enhance the quality of
-data integration by considering data integration based SLAs.                   
+data integration by including SLAs.                   
 
 % \textit{Security} and \textit{privacy} the QoS measures that are most discussed together with data integration
  %(5 papers - 4.39\%). 
