@@ -54,11 +54,18 @@ integration") AND ("Cloud" OR "Multi-cloud "))} \\
 % \caption{Number of papers retrieved in each scientific database}\label{table:pub}
 % \end{table}
 
-We retrieved  a total of 1832 publications. According to the systematic mapping methodology, the initial collection was cleaned and filtered according to inclusion and exclusion criteria applied as filters when analyzing the titles and abstracts of the papers. 
-%(see table~\ref{table:criteria}).  
-In general, we only kept publications written in English, addressing SLA models
-and languages, quality measures, and/or (multi)-cloud topics related to data
-integration. As a result of the filtering process we excluded 1718 publications.
+% We retrieved  a total of 1832 publications. According to the systematic mapping methodology, the initial collection was cleaned and filtered according to inclusion and exclusion criteria applied as filters when analyzing the titles and abstracts of the papers. 
+% %(see table~\ref{table:criteria}).  
+% In general, we only kept publications written in English, addressing SLA models
+% and languages, quality measures, and/or (multi)-cloud topics related to data
+% integration. As a result of the filtering process we excluded 1718 publications.
+% The number of papers included for building the final collection were 114
+% publications~\footnote{List of references available in:
+% https://github.com/danielboni/DEXA-2015-Can-Data-Integration-Quality-be-Enhanced-on-Multi-cloud-using-SLA.git}.
+  
+
+We retrieved  a total of 1832 publications. As a result of the filtering process
+proposed by the systematic mapping methodology~\cite{SM:Petersen:2008} we excluded 1718 publications.
 The number of papers included for building the final collection were 114
 publications~\footnote{List of references available in:
 https://github.com/danielboni/DEXA-2015-Can-Data-Integration-Quality-be-Enhanced-on-Multi-cloud-using-SLA.git}.
@@ -74,14 +81,17 @@ https://github.com/danielboni/DEXA-2015-Can-Data-Integration-Quality-be-Enhanced
 We analyzed the titles and abstracts of the  papers derived in the previous
 phase using information retrieval techniques in order to identify the frequent
 relevant terms. We used these terms for building a classification scheme
-consisting of three facets that group frequent relevant terms. We added two
-facets for classifying the type of papers (e.g., position, survey, etc.) and the
-type of contributions (e.g., model, system, language, etc). According to the
-systematic mapping methodology, the relevant frequent terms in papers can be
-considered as dimensions that represent subcategories within the facets that
+consisting of three facets that group frequent relevant terms. 
+According to the systematic mapping methodology, the relevant frequent terms in
+papers can be considered as dimensions that represent subcategories within the facets that
 group them. The following lines define the facets and dimensions of the
-classification scheme that we propose for studying SLA guided data integration
-in multi-cloud environments.  
+classification scheme we propose. 
+%  for studying SLA guided data integration
+% in multi-cloud environments.
+% We added two 
+% facets for classifying the type of papers (e.g., position, survey, etc.) and the
+% type of contributions (e.g., model, system, language, etc). 
+
 
 %.  -   .  .  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   ..  -   .  
 \textbf{\textit{Data Integration Environment:}}  
@@ -202,7 +212,7 @@ In order to observe the evolution of the publication trends we defined a time sc
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[scale=0.38]{figs/bubble-charts/PublicationsPerYear.pdf} 
+\includegraphics[scale=0.33]{figs/bubble-charts/PublicationsPerYear.pdf} 
 \caption{Publications Per Year}\label{fig:pubperyear}
 \end{figure}
 
@@ -219,18 +229,19 @@ study. The following lines discuss the answers.
 \textbf{\textit{RQ1: Which are the SLA measures that have been mostly applied 
 in the cloud?}}
 %  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .
-\begin{figure}[h!]
-\centering
-%\includegraphics[scale=0.45]{figs/bubble-charts/Contribution-SLA-DIdescription.pdf}
-\includegraphics[width=0.68\textwidth]{figs/bubble-charts/Contribution-SLA-DIdescription.pdf}
- 
-\caption{Facets Contribution, SLA and Data Integration Description}\label{fig:facet1}
-\end{figure}
+
 
 The facets SLA expression, data integration description and contribution give elements for determining which SLA measures have been applied to the cloud (Figure~\ref{fig:facet1}). 
 The resulting bubble chart shows that most contributions propose SLA models and that  \textit{privacy}
 and \textit{security} (11 papers - 9.65\%) are the most popular measures considered by SLA models for the cloud. These measures concern the network, information, data protection and confidentiality in the cloud. Most contributions propose SLA models (53 papers - 46.49\%)  but some languages (8 papers - 7.02\%) have also emerged. {\em Data provenance} is also a measure that emerges but only in papers dealing with multi-cloud environments. Data integration is merely addressed by using schemata (12 papers - 10.53\%)  and meta-data (4 papers - 3.51\%) particularly through models (34 papers - 29.82\%) and tools (25 papers - 21.93\%). Still, some works propose surveys (8 papers - 7.02\%).
  
+\begin{figure}[ht!]
+\centering
+%\includegraphics[scale=0.45]{figs/bubble-charts/Contribution-SLA-DIdescription.pdf}
+\includegraphics[width=0.75\textwidth]{figs/bubble-charts/Contribution-SLA-DIdescription.pdf}
+  
+\caption{Facets Contribution, SLA and Data Integration Description}\label{fig:facet1}
+\end{figure} 
 %The most used type of environment is \textit{cloud}, followed by \textit{data
 %warehouse, multi-cloud} and \textit{federated database}. Looking to the figure
 %you can alse note that models for SLA have been the focus in the papers (53 appearances - 46.49\%) followed by Security (11 appearances - 9.65\%), Language 
@@ -258,7 +269,7 @@ and \textit{security} (11 papers - 9.65\%) are the most popular measures conside
 %  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.88\textwidth]{figs/bubble-charts/DI-Environment-Contribution-Research.pdf}
+\includegraphics[width=0.86\textwidth]{figs/bubble-charts/DI-Environment-Contribution-Research.pdf}
 \caption{Facets Data Integration Environment, Contribution and Research}\label{fig:facet2}
 \end{figure}
 
@@ -300,13 +311,13 @@ papers - 15.78\%)  used for facilitating data integration, mostly done in the {\
 %27.19\%) is the type of research most proposed, followed by Evaluation (8
 %appearances - 7.02\%), Validation (5 appearances - 4.39\%) and Opinion (3
 %appearances - 2.63\%).
- 
+  
 %  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .
 \textbf{\textit{RQ3:  In which way and in which context has data integration been linked to QoS measures in the literature?}}
 %  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.89\textwidth]{figs/bubble-charts/Data-Quality-DI.pdf}
+\includegraphics[width=0.85\textwidth]{figs/bubble-charts/Data-Quality-DI.pdf}
 \caption{Facets Data Quality, Data Integration Environment and Data Integration Description}\label{fig:facet4}
 \end{figure}
 
