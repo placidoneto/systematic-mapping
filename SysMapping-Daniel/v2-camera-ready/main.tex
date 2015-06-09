@@ -19,16 +19,6 @@
 \usepackage{amssymb}
 \setcounter{tocdepth}{3}
 \usepackage{graphicx}
- 
-% \usepackage{geometry}
-% %\geometry{letterpaper}                   % ... or a4paper or a5paper or ...
-% 
-% \usepackage{xspace}
- 
-% \usepackage{epstopdf}
-% \usepackage{graphicx,color}
-% 
-% 
 \usepackage{booktabs}
 \usepackage{datatool}
 \usepackage{tikz}
@@ -96,19 +86,6 @@
 
 \maketitle
 
- 
-% \begin{abstract}
-% The abstract should summarize the contents of the paper and should
-% contain at least 70 and at most 150 words. It should be written using the
-% \emph{abstract} environment.
-% 
-% \keywords{We would like to encourage you to list your keywords within
-% the abstract section}
-% \end{abstract}
-
-
-%\input{Title-And-Authors}
-
 \input{Abstract-And-Keywords}
 
 % -------------------------------- Introduction -------------------------------- %
@@ -120,28 +97,12 @@
 %. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 \section{Data integration challenges: classification scheme}\label{sec:sm}
 %. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-\input{section-3} % Mapping Process %
-% --------------------------------              -------------------------------- %
-
-%\input{section-4} % Quantitative Analysis %
-% --------------------------------              -------------------------------- %
-
-%-[BEGIN]-----------------------------------------------------------------------
-%\section{Enhancing  Data Integration on Multi-Cloud environments with SLA}\label{sec:approach}
-%-[END]-----------------------------------------------------------------------
-%\input{section-5} % Approach ... %
-
-% -------------------------------- Related Works ------------------------------- %
-%\section{Related Works}\label{sec:rw}
-%\input{section-2}
-% --------------------------------              -------------------------------- %
-
-%\section{Infrastructure implemented for the scenario}
+\input{section-3} 
 
 \section{Conclusion and final remarks}\label{sec:conc}
 This paper introduces the challenge of integrating data from distributed data
-services deployed on different cloud providers guided by  SLAs and user preferences statement. The data integration problem
-is stated as a continuos data provision problem that has associated SLAs and
+services deployed on different cloud providers guided by SLAs and user preferences statement. The data integration problem
+is stated as a continuous data provision problem that has associated SLAs and
 that uses techniques for ensuring different qualities of delivered data
 (freshness, precision, completeness). The problem statement was derived from a
 classification scheme that resulted from a study of existing publications
@@ -160,10 +121,7 @@ From the results of our systematic analysis,  we identified trends and open
 issues in our research topic and proposed the general lines of an original data integration solution.  We are also  developing the strategies to
 better define a SLA extension and data consumers preferences description for
 guiding data integration in multi-cloud environments.
-   
-% We are currently developing the strategies and algorithms of our vision  applied
-% to energy consumption applications and also to elections and political campaign data
-% integration in order to guide decision making on campaign strategies.         
+      
 
 \bibliographystyle{plain}
 \bibliography{bibliography,biblio,example}
